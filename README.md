@@ -20,9 +20,11 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [Project Links](#project-links)
 - [How To Contribute](#how-to-contribute)
+- [Contributors](#contributors)
 
 
 <!-- OVERVIEW -->
@@ -56,3 +58,12 @@
 - Before you push to your changes always make sure that your branch is always up-to-date in other to avoid merge conflicts: `git pull upstream dev`
 - After making sure your branch is up-to-date, push the new changes to your new branch: `git push origin your-current-branch-name`
 - Create a pull request to the dev branch
+
+
+## Contributors
+
+This project is only possible thanks to the wonderful people that carried it from just an idea all the way to a live product that is making life a lot easier.
+
+Below is a list of these wonderful people;
+
+- [Imiebo Godson](https://github.com/ImieboGodson) - Frontend Developer
