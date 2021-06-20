@@ -46,7 +46,7 @@ This project is centered on enabling people within the tech ecosystem to share p
 ## How To Contribute
 
 - Fork the repository
-- Clone and then open it up on your code editor
+- Clone and then open it up on your code editor `git clone https://github.com/zuri-training/MyIssue-fe-pjt-105.git`
 - Open terminal and set upsream branch: `git remote add upstream https://github.com/zuri-training/MyIssue-fe-pjt-105`
 - Pull upstream; `git pull upstream dev`
 - Create a new branch for the feature you are working on; `git checkout -b feature-name`
@@ -64,3 +64,5 @@ Below is a list of these wonderful people;
 
 - [Imiebo Godson](https://github.com/ImieboGodson) - Frontend Developer
 - [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer
+
+
