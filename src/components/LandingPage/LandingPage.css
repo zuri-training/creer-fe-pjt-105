@@ -1,0 +1,249 @@
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroText {
+    width: 46%;
+}
+
+h1 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+}
+
+p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.heroText p {
+    width: 85%;
+    margin: 20px 0;
+}
+
+.heroText button {
+    margin: 20px 0;
+    padding: 15px 45px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #3757FF;
+    cursor: pointer;
+    transition: ease-in-out 0.3s all;
+}
+
+button:hover {
+    box-shadow: 1px 7px 10px -6px rgba(0,0,0,0.52);
+}
+
+
+.heroImage {
+    width: 46%;
+}
+
+.heroImage img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+/* How-It-Works section */
+.howItWorks {
+    margin: 100px 0;
+    width: 100%;
+}
+
+.howItWorks .sectionTitle {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionByWords {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descriptionByWords .subSection {
+    width: 32%;
+}
+
+.descriptionByWords .effects {
+    display: flex;
+    align-items: center;
+}
+
+.descriptionByWords .dot {
+    width: 20px;
+    margin-right: 5px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FB3838;
+}
+
+hr {
+    width: 90%;
+    border: 0.5px dashed #FB3838
+}
+
+.howItWorks h2 {
+    margin: 35px 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* Ignite Your Curiosity */
+.igniteYourCuriosity {
+    margin: 200px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionImage {
+    width: 50%;
+}
+
+.sectionImage img {
+    width: 100%;
+}
+
+.sectionTitle {
+    margin-bottom: 50px;
+}
+
+.sectionTitle h1 {
+    margin: 5px 0;
+}
+
+.sectionTitle p {
+    margin:  5px 0;
+    color: #3757FF;
+}
+
+.sectionText {
+    width: 45%;
+}
+
+.sectionText h2 {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+.sectionText p {
+    margin: 5px 0;
+}
+
+.subSections .subSection {
+    margin: 20px 0;
+}
+
+
+/* About Us */
+
+
+/* FAQs */
+
+
+/* Contact Us */
+.contactUs {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(55, 87, 255, 0.2);
+    border-radius: 8px;
+}
+
+.contactUsContent {
+    text-align: center;
+}
+
+.contactUsContent h1 {
+    margin: 10px;
+}
+
+.contactUsForm {
+    width: 610px;
+    height: 570px;
+    padding: 70px 30px 20px 30px;
+    display: inline-block;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contactUsForm input[type=text],
+.contactUsForm input[type=email],
+.contactUsForm textarea {
+    margin: 20px 0;
+    width: 70%;
+    padding: 25px;
+    background: #FFFFFF;
+    border: 0.5px solid #9C9797;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.contactUsForm input {
+    height: 74px;
+}
+
+.contactUsForm textarea {
+    height: 163px;
+}
+
+.submitBtn {
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.submitBtn input[type=submit] {
+    padding: 15px 45px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #3757FF;
+    cursor: pointer;
+    transition: ease-in-out 0.3s all;
+}
+
+input[type=submit]:hover {
+    box-shadow: 1px 7px 10px -6px rgba(0,0,0,0.52);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
