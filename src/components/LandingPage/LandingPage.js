@@ -32,7 +32,7 @@ const LandingPage = () => {
                   <div className='dot'></div>
                   <hr/>
                 </div>
-                <div>
+                <div className='smallBox'>
                   <h2>Share</h2>
                   <p>Share your project ideas, problems with millions of people around the world.</p>
                 </div>
@@ -42,7 +42,7 @@ const LandingPage = () => {
                   <div className='dot'></div>
                   <hr/>
                 </div>
-                <div>
+                <div className='smallBox'>
                   <h2>Discover</h2>
                   <p>Discover a wide  range of solutions to your problems and get opinions on your project ideas.</p>
                 </div>
@@ -52,7 +52,7 @@ const LandingPage = () => {
                   <div className='dot'></div>
                   <hr/>
                 </div>
-                <div>
+                <div className='smallBox'>
                   <h2>Explore</h2>
                   <p>Explore knowledge, discuss interests and meet industry leaders in your preferred community.</p>
                 </div>
@@ -92,7 +92,14 @@ const LandingPage = () => {
           </section>
 
           {/* About Us */}
-          <section className='aboutUs'></section>
+          <section className='aboutUs'>
+            <div className='sectionTitle'>
+              <h1>About Us</h1>
+            </div>
+            <div>
+              <p>Our goal at creer is to spur you to action, to push to start having those conversations through our platform and interactive technology.</p>
+            </div>
+          </section>
 
           {/* FAQs */}
           <section className='faqs'></section>
