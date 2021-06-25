@@ -1,17 +1,18 @@
 import './Header.css';
+import Logo from '../Logo.png';
 
 const Header = () => {
     return (
         <div className='header'>
             <div className='logo'>
-                <p>Creer</p>
+                <img src={Logo} alt='Logo'/>
             </div>
             <div className='nav-items'>
                 <ul>
-                    <li>Blog</li>
                     <li>Contact us</li>
                     <li>Learn more</li>
-                    <li className='loginBtn'>Login</li>
+                    <li className='headerBtn loginBtn'>Login</li>
+                    <li className='headerBtn signUpBtn'>Get Started</li>
                 </ul>
             </div>
         </div>

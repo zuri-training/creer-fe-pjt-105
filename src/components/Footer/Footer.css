@@ -1,0 +1,56 @@
+.footer,
+.footerLinks,
+.SocialLinks,
+.company,
+.legal,
+.getHelp {
+    display: flex;
+}
+
+.footer {
+    position: sticky;
+    padding: 50px 0 70px 0;
+}
+
+.footerLogoSection {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.SocialLinks {
+    margin-top: 40px;
+}
+
+.SocialLinks a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footerLinks {
+    margin-left: 50px;
+    justify-content: space-between;
+}
+
+.company,
+.legal,
+.getHelp {
+    margin: 0 30px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.company a,
+.legal a,
+.getHelp a {
+    margin: 10px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.618);
+}
+
+.footer a:hover {
+    color: #000;
+}
