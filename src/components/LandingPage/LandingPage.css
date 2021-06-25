@@ -2,7 +2,7 @@
 /* Hero Section */
 .hero {
     width: 100%;
-    margin: 100px 0;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
 }
@@ -62,7 +62,7 @@ button:hover {
 
 /* How-It-Works section */
 .howItWorks {
-    margin: 100px 0;
+    margin-top: 200px;
     width: 100%;
 }
 
@@ -102,6 +102,10 @@ hr {
     border: 0.5px dashed #FB3838
 }
 
+.smallBox {
+    padding-left: 6px;
+}
+
 .howItWorks h2 {
     margin: 35px 0;
 }
@@ -118,7 +122,7 @@ h2 {
 
 /* Ignite Your Curiosity */
 .igniteYourCuriosity {
-    margin: 200px 0;
+    margin-top: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -164,13 +168,24 @@ h2 {
 
 
 /* About Us */
+.aboutUs {
+    margin-top: 200px;
+}
 
+.aboutUs .sectionTitle {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* FAQs */
 
 
 /* Contact Us */
 .contactUs {
+    margin-top: 250px;
     padding: 50px 20px;
     display: flex;
     justify-content: center;
