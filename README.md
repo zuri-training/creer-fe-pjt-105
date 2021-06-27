@@ -39,7 +39,7 @@ This project is centered on enabling people within the tech ecosystem to share/g
 
 - Project Documentation - https://docs.google.com/document/d/1lgoH_PtHqetFhnvqx-dK8v78pIeqiglOnmbXwsw72Eg/edit
 - Design Link - https://www.figma.com/file/SR7xS1DbOfIOwpqa1MpDHv/?node-id=0%3A1
-- Frontend Github Repo - https://github.com/zuri-training/MyIssue-fe-pjt-105
+- Frontend Github Repo - https://github.com/zuri-training/creer-fe-pjt-105
 - Backend Github Repo - https://github.com/zuri-training/MyIssue-be-pjt-105
 
 
@@ -49,7 +49,7 @@ This project is centered on enabling people within the tech ecosystem to share/g
 
 - After cloning the files, Navigate into the project folder (For you to have the file locally on your machine you will have to follow the steps below.)
   ```javascript
-    cd myissue-fe-pjt-105
+    cd creer-fe-pjt-105
   ```
 
 - Install necessary dependencies for the project to run successfully on your machine.
@@ -67,8 +67,8 @@ This project is centered on enabling people within the tech ecosystem to share/g
 ## How To Contribute
 
 - Fork the repository
-- Clone and then open it up on your code editor `git clone https://github.com/zuri-training/MyIssue-fe-pjt-105.git`
-- Open terminal and set upsream branch: `git remote add upstream https://github.com/zuri-training/MyIssue-fe-pjt-105`
+- Clone and then open it up on your code editor `git clone https://github.com/zuri-training/creer-fe-pjt-105.git`
+- Open terminal and set upsream branch: `git remote add upstream https://github.com/zuri-training/creer-fe-pjt-105`
 - Pull upstream; `git pull upstream dev`
 - Create a new branch for the feature you are working on; `git checkout -b feature-name`
 - After making changes, stage all the changes you have made locally for a commit by running `git add .`
