@@ -89,5 +89,6 @@ Below is a list of these wonderful people;
 - [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer
 - [Okoroafor Daniel](https://github.com/OkoroaforDaniel) -Frontend Developer
 - [Odoh Praise](https://github.com/odohpraise) - Frontend Developer
+- [Oluwasegun Alege](https://github.com/codeinn001) - Frontend Developer
 
 
