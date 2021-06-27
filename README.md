@@ -88,6 +88,6 @@ Below is a list of these wonderful people;
 - [Imiebo Godson](https://github.com/ImieboGodson) - Frontend Developer
 - [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer
 - [Okoroafor Daniel](https://github.com/OkoroaforDaniel) -Frontend Developer
-- [Odoh Praise](https://github.com/odohpraise) - Frontend Developer
+- [praise odoh](https://github.com/odohpraise) - Frontend Developer
 
 

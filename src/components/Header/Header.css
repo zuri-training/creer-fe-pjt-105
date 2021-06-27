@@ -9,15 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(249,251,252,0.95);
-}
-
-.logo p {
-    color: #fb3838;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .nav-items {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
 }
@@ -33,19 +29,40 @@ ul {
 ul li {
     padding: 0 10px;
     cursor: pointer;
+    transition: ease-in-out 0.3s all;
 }
 
-.loginBtn {
+ul li:hover {
+    color: #3757FF;
+}
+
+.headerBtn {
     padding: 10px 35px;
     border-radius: 5px;
     border: none;
     outline: none;
-    color: #fff;
-    background-color: #ff2d2d;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
+.loginBtn {
+    color: #000;
+    background-color: #EFEEEE;
+}
+
 .loginBtn:hover {
+    color: #000;
+}
+
+.signUpBtn {
+    color: #fff;
+    background-color: #3757FF;
+}
+
+.signUpBtn:hover {
+    color: #fff;
+}
+
+.headerBtn:hover {
     box-shadow: 1px 7px 10px -6px rgba(0,0,0,0.52);
 }
