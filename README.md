@@ -84,15 +84,11 @@ This project is centered on enabling people within the tech ecosystem to share p
 This project is only possible thanks to the wonderful people that carried it from just an idea all the way to a live product that is making life a lot easier.
 
 Below is a list of these wonderful people;
-
+git
 - [Imiebo Godson](https://github.com/ImieboGodson) - Frontend Developer
 - [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer
 - [Okoroafor Daniel](https://github.com/OkoroaforDaniel) -Frontend Developer
-<<<<<<< HEAD
 - [Odoh Praise](https://github.com/odohpraise) - Frontend Developer
-- [Oluwasegun Alege](https://github.com/codeinn001) - Frontend Developer
-=======
-- [praise odoh](https://github.com/odohpraise) - Frontend Developer
->>>>>>> 3077a8939b3d3ef7b35b585ee705954906a445e6
+- [Oluwasegun Alege](https://github.com/codeinn001) - Frontend Developergit 
 
 
