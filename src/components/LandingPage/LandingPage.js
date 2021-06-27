@@ -1,11 +1,13 @@
 import './LandingPage.css';
 import heroImage from './hero-image.png';
 import communityImage from './community-image.png';
-import Header from '../Header/Header'
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const LandingPage = () => {
     return (
         <div className='landingPage'>
+
           {/* Header */}
           <Header />
 
@@ -17,7 +19,7 @@ const LandingPage = () => {
               <button>Get Started</button>
             </div>
             <div className='heroImage'>
-              <img src={heroImage} alt='image' />
+              <img src={heroImage} alt='illustration' />
             </div>
           </section>
 
@@ -63,7 +65,7 @@ const LandingPage = () => {
           {/* Ignite Your Curiosity Section */}
           <section className='igniteYourCuriosity'>
             <div className='sectionImage'>
-              <img src={communityImage} alt='image'/>
+              <img src={communityImage} alt='community'/>
             </div>
             <div className='sectionText'>
               <div className='sectionTitle'>
@@ -97,7 +99,7 @@ const LandingPage = () => {
               <h1>About Us</h1>
             </div>
             <div>
-              <p>Our goal at creer is to spur you to action, to push to start having those conversations through our platform and interactive technology.</p>
+              <p>Our goal at creer is to spur you to action, we are giving the platform to vent freely; those ideas, issues, and insights without thinking too much about being judged or frowned at.</p>
             </div>
           </section>
 
@@ -119,6 +121,9 @@ const LandingPage = () => {
               </div>
             </div>
           </section>
+
+          {/* Footer */}
+          <Footer />
 
         </div>
     )
