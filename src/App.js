@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
         {/* When you are building a component/feature/page add it to here to see your changes in realtime */}
-        <Homepage />
+        <LandingPage />
     </div>
   );
 }
