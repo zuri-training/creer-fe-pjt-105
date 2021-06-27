@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/zuri-training/creer-fe-pjt-105/tree/main/static/css/main.e2de8bff.chunk.css",
-    "main.js": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/main.473433c2.chunk.js",
-    "main.js.map": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/main.473433c2.chunk.js.map",
-    "runtime-main.js": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/runtime-main.2169274a.js",
-    "runtime-main.js.map": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/runtime-main.2169274a.js.map",
-    "static/js/2.f24848fe.chunk.js": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/2.f24848fe.chunk.js",
-    "static/js/2.f24848fe.chunk.js.map": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/2.f24848fe.chunk.js.map",
-    "static/js/3.4d441632.chunk.js": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/3.4d441632.chunk.js",
-    "static/js/3.4d441632.chunk.js.map": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/3.4d441632.chunk.js.map",
-    "index.html": "/zuri-training/creer-fe-pjt-105/tree/main/index.html",
-    "static/css/main.e2de8bff.chunk.css.map": "/zuri-training/creer-fe-pjt-105/tree/main/static/css/main.e2de8bff.chunk.css.map",
-    "static/js/2.f24848fe.chunk.js.LICENSE.txt": "/zuri-training/creer-fe-pjt-105/tree/main/static/js/2.f24848fe.chunk.js.LICENSE.txt",
-    "static/media/community-image.db1f7b28.png": "/zuri-training/creer-fe-pjt-105/tree/main/static/media/community-image.db1f7b28.png",
-    "static/media/hero-image.527902b0.png": "/zuri-training/creer-fe-pjt-105/tree/main/static/media/hero-image.527902b0.png"
+    "main.css": "/zuri-training/creer-fe-pjt-105/static/css/main.e2de8bff.chunk.css",
+    "main.js": "/zuri-training/creer-fe-pjt-105/static/js/main.473433c2.chunk.js",
+    "main.js.map": "/zuri-training/creer-fe-pjt-105/static/js/main.473433c2.chunk.js.map",
+    "runtime-main.js": "/zuri-training/creer-fe-pjt-105/static/js/runtime-main.00dcec41.js",
+    "runtime-main.js.map": "/zuri-training/creer-fe-pjt-105/static/js/runtime-main.00dcec41.js.map",
+    "static/js/2.f24848fe.chunk.js": "/zuri-training/creer-fe-pjt-105/static/js/2.f24848fe.chunk.js",
+    "static/js/2.f24848fe.chunk.js.map": "/zuri-training/creer-fe-pjt-105/static/js/2.f24848fe.chunk.js.map",
+    "static/js/3.4d441632.chunk.js": "/zuri-training/creer-fe-pjt-105/static/js/3.4d441632.chunk.js",
+    "static/js/3.4d441632.chunk.js.map": "/zuri-training/creer-fe-pjt-105/static/js/3.4d441632.chunk.js.map",
+    "index.html": "/zuri-training/creer-fe-pjt-105/index.html",
+    "static/css/main.e2de8bff.chunk.css.map": "/zuri-training/creer-fe-pjt-105/static/css/main.e2de8bff.chunk.css.map",
+    "static/js/2.f24848fe.chunk.js.LICENSE.txt": "/zuri-training/creer-fe-pjt-105/static/js/2.f24848fe.chunk.js.LICENSE.txt",
+    "static/media/community-image.db1f7b28.png": "/zuri-training/creer-fe-pjt-105/static/media/community-image.db1f7b28.png",
+    "static/media/hero-image.527902b0.png": "/zuri-training/creer-fe-pjt-105/static/media/hero-image.527902b0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2169274a.js",
+    "static/js/runtime-main.00dcec41.js",
     "static/js/2.f24848fe.chunk.js",
     "static/css/main.e2de8bff.chunk.css",
     "static/js/main.473433c2.chunk.js"
