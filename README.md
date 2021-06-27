@@ -1,4 +1,4 @@
-<h1 align="center">MyIssue</h1>
+<h1 align="center">Creer</h1>
 
 <div align="center">
    A project built during the  <a href="https://training.zuri.team/" target="_blank">Zuri Training</a>.
@@ -31,7 +31,7 @@
 
 <!-- ![screenshot](https://github.com/ImieboGodson/DevChallenges-checkout-page/blob/master/resources/images/checkout-page%20desktop-view.png) -->
 
-This project is centered on enabling people within the tech ecosystem to share problems encountered daily and/or possible solutions to those problems. Many developers, as well as non-developers, have so many information ranging from project ideas to problems or solution to problems they have encountered that they wish to share in other to get solutions or feedback from peers in the ecosystem. This platform will serve as a "dumping ground" of information(problems/solutions/project ideas/insights) for the tech bros and sisters in the ecosystem.
+This project is centered on enabling people within the tech ecosystem to share/get insights about issues encountered in the tech ecosystem. Many developers, as well as non-developers, have so many information ranging from project ideas to problems or solution to problems they have encountered that they wish to share in other to get solutions or feedback from peers in the ecosystem. This platform will serve as a "dumping ground" of information(problems/solutions/project ideas/insights) for the tech bros and sisters in the ecosystem.
 
 
 <!-- PROJECT LINKS -->
