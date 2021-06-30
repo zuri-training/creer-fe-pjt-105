@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/creer-fe-pjt-105/static/css/main.e2de8bff.chunk.css",
-    "main.js": "/creer-fe-pjt-105/static/js/main.473433c2.chunk.js",
-    "main.js.map": "/creer-fe-pjt-105/static/js/main.473433c2.chunk.js.map",
-    "runtime-main.js": "/creer-fe-pjt-105/static/js/runtime-main.73d05b5d.js",
-    "runtime-main.js.map": "/creer-fe-pjt-105/static/js/runtime-main.73d05b5d.js.map",
-    "static/js/2.f24848fe.chunk.js": "/creer-fe-pjt-105/static/js/2.f24848fe.chunk.js",
-    "static/js/2.f24848fe.chunk.js.map": "/creer-fe-pjt-105/static/js/2.f24848fe.chunk.js.map",
-    "static/js/3.4d441632.chunk.js": "/creer-fe-pjt-105/static/js/3.4d441632.chunk.js",
-    "static/js/3.4d441632.chunk.js.map": "/creer-fe-pjt-105/static/js/3.4d441632.chunk.js.map",
+    "main.css": "/creer-fe-pjt-105/static/css/main.b7e61fc5.chunk.css",
+    "main.js": "/creer-fe-pjt-105/static/js/main.c9221ca4.chunk.js",
+    "main.js.map": "/creer-fe-pjt-105/static/js/main.c9221ca4.chunk.js.map",
+    "runtime-main.js": "/creer-fe-pjt-105/static/js/runtime-main.b200fb59.js",
+    "runtime-main.js.map": "/creer-fe-pjt-105/static/js/runtime-main.b200fb59.js.map",
+    "static/js/2.c09ceb24.chunk.js": "/creer-fe-pjt-105/static/js/2.c09ceb24.chunk.js",
+    "static/js/2.c09ceb24.chunk.js.map": "/creer-fe-pjt-105/static/js/2.c09ceb24.chunk.js.map",
+    "static/js/3.8163aaaf.chunk.js": "/creer-fe-pjt-105/static/js/3.8163aaaf.chunk.js",
+    "static/js/3.8163aaaf.chunk.js.map": "/creer-fe-pjt-105/static/js/3.8163aaaf.chunk.js.map",
     "index.html": "/creer-fe-pjt-105/index.html",
-    "static/css/main.e2de8bff.chunk.css.map": "/creer-fe-pjt-105/static/css/main.e2de8bff.chunk.css.map",
-    "static/js/2.f24848fe.chunk.js.LICENSE.txt": "/creer-fe-pjt-105/static/js/2.f24848fe.chunk.js.LICENSE.txt",
-    "static/media/community-image.db1f7b28.png": "/creer-fe-pjt-105/static/media/community-image.db1f7b28.png",
-    "static/media/hero-image.527902b0.png": "/creer-fe-pjt-105/static/media/hero-image.527902b0.png"
+    "static/css/main.b7e61fc5.chunk.css.map": "/creer-fe-pjt-105/static/css/main.b7e61fc5.chunk.css.map",
+    "static/js/2.c09ceb24.chunk.js.LICENSE.txt": "/creer-fe-pjt-105/static/js/2.c09ceb24.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.73d05b5d.js",
-    "static/js/2.f24848fe.chunk.js",
-    "static/css/main.e2de8bff.chunk.css",
-    "static/js/main.473433c2.chunk.js"
+    "static/js/runtime-main.b200fb59.js",
+    "static/js/2.c09ceb24.chunk.js",
+    "static/css/main.b7e61fc5.chunk.css",
+    "static/js/main.c9221ca4.chunk.js"
   ]
 }
