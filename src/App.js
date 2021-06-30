@@ -1,7 +1,7 @@
 import './App.css'
-import LandingPage from './components/LandingPage/LandingPage';
+import LandingPage from './pages/LandingPage/LandingPage';
 import SignIn from './components/SignIn/SignIn';
-import Homepage from './components/Homepage/Homepage';
+import Homepage from './pages/Homepage/Homepage';
 
 function App() {
   return (

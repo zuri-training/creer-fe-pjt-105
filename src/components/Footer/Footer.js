@@ -1,12 +1,11 @@
 import './Footer.css';
-import Logo from '../Logo.png';
 
 const Footer = () => {
     return (
         <div className='footer'>
             <div className='footerLogoSection'>
                 <div className='logo'>
-                    <img src={Logo} alt='Logo'/>
+                    <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
                 </div>
                 <div className='SocialLinks'>
                     <a href='#'>Twitter</a>

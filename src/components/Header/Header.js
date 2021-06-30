@@ -1,11 +1,10 @@
 import './Header.css';
-import Logo from '../Logo.png';
 
 const Header = () => {
     return (
         <div className='header'>
             <div className='logo'>
-                <img src={Logo} alt='Logo'/>
+                <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
             </div>
             <div className='nav-items'>
                 <ul>
@@ -19,4 +18,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

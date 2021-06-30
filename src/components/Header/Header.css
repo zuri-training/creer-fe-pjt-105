@@ -18,7 +18,7 @@
     justify-content: flex-end;
 }
 
-ul {
+.header ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,17 +26,17 @@ ul {
     list-style: none;
 }
 
-ul li {
+.header ul li {
     padding: 0 10px;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
-ul li:hover {
+.header ul li:hover {
     color: #3757FF;
 }
 
-.headerBtn {
+.header .headerBtn {
     padding: 10px 35px;
     border-radius: 5px;
     border: none;
@@ -45,12 +45,12 @@ ul li:hover {
     transition: ease-in-out 0.3s all;
 }
 
-.loginBtn {
+.header .loginBtn {
     color: #000;
     background-color: #EFEEEE;
 }
 
-.loginBtn:hover {
+.header .loginBtn:hover {
     color: #000;
 }
 
@@ -59,7 +59,7 @@ ul li:hover {
     background-color: #3757FF;
 }
 
-.signUpBtn:hover {
+.header .signUpBtn:hover {
     color: #fff;
 }
 
