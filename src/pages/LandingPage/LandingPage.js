@@ -1,8 +1,6 @@
 import './LandingPage.css';
-import heroImage from './hero-image.png';
-import communityImage from './community-image.png';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 const LandingPage = () => {
     return (
@@ -19,7 +17,7 @@ const LandingPage = () => {
               <button>Get Started</button>
             </div>
             <div className='heroImage'>
-              <img src={heroImage} alt='illustration' />
+              <img src={process.env.PUBLIC_URL + '/assets/hero-image.png'} alt='illustration' />
             </div>
           </section>
 
@@ -65,7 +63,7 @@ const LandingPage = () => {
           {/* Ignite Your Curiosity Section */}
           <section className='igniteYourCuriosity'>
             <div className='sectionImage'>
-              <img src={communityImage} alt='community'/>
+              <img src={process.env.PUBLIC_URL + '/assets/community-image.png'} alt='community'/>
             </div>
             <div className='sectionText'>
               <div className='sectionTitle'>
@@ -116,7 +114,7 @@ const LandingPage = () => {
                 <input type='email' name='email-address'  id='email-address' placeholder='Email'/>
                 <textarea name='message'  id='message' placeholder='Write something...'></textarea>
                 <div className='submitBtn'>
-                  <input className='' type='submit' value='Send Message'/>
+                  <input className='contactUsBtn' type='submit' value='Send Message'/>
                 </div>
               </div>
             </div>

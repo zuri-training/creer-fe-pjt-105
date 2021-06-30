@@ -1,0 +1,41 @@
+.sideBar {
+    width: 300px;
+    min-height: 100vh;
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.sideBar p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sideBar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sideBar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s all;
+}
+
+.sideBar ul li:hover {
+    background-color: aquamarine;
+}
+
+.sideBar ul li p {
+    margin-left: 15px;
+}
+
+.mainSideBarOptions li {
+    display: flex;
+    align-items: center;
+}
+
+.communityList {
+    display: none;
+    margin-left: 20px;
+}
