@@ -1,8 +1,11 @@
 import './LandingPage.css';
+import { Add } from '@material-ui/icons';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
 const LandingPage = () => {
+
+
     return (
         <div className='landingPage'>
 
@@ -93,16 +96,76 @@ const LandingPage = () => {
 
           {/* About Us */}
           <section className='aboutUs'>
-            <div className='sectionTitle'>
-              <h1>About Us</h1>
-            </div>
-            <div>
-              <p>Our goal at creer is to spur you to action, we are giving the platform to vent freely; those ideas, issues, and insights without thinking too much about being judged or frowned at.</p>
+            <div className='aboutUsContent'>
+              <div className='aboutUsContentTitle'>
+                <h1>About Us</h1>
+              </div>
+              <div className='aboutUsContentParagraph'>
+                <p>Our goal at creer is to spur you to action, we are giving the platform to vent freely; those ideas, issues, and insights without thinking too much about being judged or frowned at.</p>
+              </div>
             </div>
           </section>
 
           {/* FAQs */}
-          <section className='faqs'></section>
+          <section className='faqs'>
+            <div className='faqsContents'>
+              <div className='faqsContentsTitle'>
+                <h1>FAQs</h1>
+              </div>
+              <div className='faqsQuestionsAndAnswers'>
+                <div className='faqsQuestionAndAnswer'>
+                  <div className='faqsQuestion'>
+                    <p>I am totally new to this “website thing”. How does the whole thing work?</p>
+                    <Add className='addBtn'/>
+                  </div>
+                  <div className='faqsAnswer closed'>
+                    <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
+                  </div>
+                  <hr/>
+                </div>
+                <div className='faqsQuestionAndAnswer'>
+                  <div className='faqsQuestion'>
+                    <p>Do you provide support  to individuals and community?</p>
+                    <Add className='addBtn'/>
+                  </div>
+                  <div className='faqsAnswer closed'>
+                    <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
+                  </div>
+                  <hr/>
+                </div>
+                <div className='faqsQuestionAndAnswer'>
+                  <div className='faqsQuestion'>
+                    <p>Who can I talk to if I have a question, complaint or need technical support?</p>
+                    <Add className='addBtn'/>
+                  </div>
+                  <div className='faqsAnswer closed'>
+                    <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
+                  </div>
+                  <hr/>
+                </div>
+                <div className='faqsQuestionAndAnswer'>
+                  <div className='faqsQuestion'>
+                    <p>Who can use the Creer platform?</p>
+                    <Add className='addBtn'/>
+                  </div>
+                  <div className='faqsAnswer closed'>
+                    <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
+                  </div>
+                  <hr/>
+                </div>
+                <div className='faqsQuestionAndAnswer'>
+                  <div className='faqsQuestion'>
+                    <p>What kinds of posts are allowed on Creer?</p>
+                    <Add className='addBtn'/>
+                  </div>
+                  <div className='faqsAnswer closed'>
+                    <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
+                  </div>
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Contact uS */}
           <section className='contactUs'>

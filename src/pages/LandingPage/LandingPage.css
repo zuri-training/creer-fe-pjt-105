@@ -46,7 +46,7 @@ p {
 }
 
 button:hover {
-    box-shadow: 1px 7px 10px -6px rgba(0,0,0,0.52);
+    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.323);
 }
 
 
@@ -97,7 +97,7 @@ button:hover {
     background-color: #FB3838;
 }
 
-hr {
+.descriptionByWords hr {
     width: 90%;
     border: 0.5px dashed #FB3838
 }
@@ -170,22 +170,94 @@ h2 {
 /* About Us */
 .aboutUs {
     margin-top: 200px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(55, 87, 255, 0.2);
 }
 
-.aboutUs .sectionTitle {
-    margin: 40px 0;
-    width: 100%;
+.aboutUsContent {
+    margin: 50px 0 100px 0;
+    max-width: 800px;
+    text-align: center;
+}
+
+.aboutUsContentTitle {
+    margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* FAQs */
+.aboutUsContentTitle h1 {
+    margin: 20px 0;
+    color: #FB0909;
+}
 
+.aboutUsContentParagraph p{
+    margin: 0;
+    text-align: center;
+}
+
+/* FAQs */
+.faqs {
+    margin-top: 100px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqsContents {
+    width: 70%;
+}
+
+.faqsContentsTitle {
+    width: 100%;
+    text-align: center;
+}
+
+.faqsQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqsQuestion p {
+    font-weight: 500;
+}
+
+.faqsAnswer {
+    padding-right: 30px;
+}
+
+.faqsAnswer p {
+    font-size: 18px;
+    color: #000;
+}
+
+.faqsAnswer.closed {
+    opacity: 0;
+    max-height: 0px;
+    height: 100%;
+    visibility: hidden;
+    pointer-events: none;
+    margin-bottom: 0px;
+}
+
+.faqsAnswer.open {
+    opacity: 1;
+    max-height: 160px;
+    height: 100%;
+    visibility: visible;
+    pointer-events: all;
+    margin-bottom: 32px;
+}
 
 /* Contact Us */
 .contactUs {
-    margin-top: 250px;
+    margin-top: 100px;
     padding: 50px 20px;
     display: flex;
     justify-content: center;
@@ -255,7 +327,7 @@ h2 {
 }
 
 input[type=submit]:hover {
-    box-shadow: 1px 7px 10px -6px rgba(0,0,0,0.52);
+    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.302);
 }
 
 input:focus,
