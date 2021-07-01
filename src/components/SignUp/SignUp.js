@@ -39,7 +39,7 @@ function App() {
           value="ckeckBox"
           id="checkBox"
           defaultChecked={false}/>
-            <label for="ckeckid">I agree to the terms of service and privacy policy</label>
+            <label for="ckeckid">I agree to the terms of service and privacy policy.</label>
         </div>
 
             <button id="marginWork" onClick="document.location='#'">Register</button>
