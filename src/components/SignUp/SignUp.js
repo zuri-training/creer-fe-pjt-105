@@ -13,7 +13,7 @@ function App() {
             Get Started
         </h2>
         <p id="marginWork">
-            Let's get you all set up, so you can verify your personal account and begin setting up your account
+            Let's get you all set up, so you can verify your personal account and begin setting up your account.
         </p>
         <div id="marginWork" className="Google">
         <img src={image}/>
