@@ -1,3 +1,5 @@
+<h1 align="center">Project 105</h1>
+
 <h1 align="center">Creer</h1>
 
 <div align="center">
@@ -88,6 +90,6 @@ Below is a list of these wonderful people;
 - [Imiebo Godson](https://github.com/ImieboGodson) - Frontend Developer
 - [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer
 - [Okoroafor Daniel](https://github.com/OkoroaforDaniel) -Frontend Developer
-- [praise odoh](https://github.com/odohpraise) - Frontend Developer
+- [Praise Odoh](https://github.com/odohpraise) - Frontend Developer
 
 
