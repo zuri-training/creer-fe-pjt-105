@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.signIn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.signInInfo {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem 2.4rem;
+}
+
+.signInHeading {
+  text-align: left;
+}
+.bannerImage {
+  background-color: #dad2ff;
+  min-width: 50vw;
+  width: 50vw;
+  padding: 40% 0;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: #ff0000;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.loginTitle {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.welcomeText {
+  margin: 1.4rem 0;
+  font-size: 0.8rem;
+}
+
+.googleSignInBtn {
+  width: 400px;
+  border: 1px solid #cccaca;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+}
+
+.googleSignInBtn .link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.googleSignInBtn:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.loginBreak {
+  width: 400px;
+  text-align: center;
+  border-bottom: 1px solid #cccaca;
+  line-height: 0.1em;
+  margin: 2rem 0 1rem;
+}
+
+.breakText {
+  background: #ffffff;
+  padding: 0 0.5rem;
+}
+
+.signInInput {
+  width: 350px;
+  border: 1px solid #cccaca;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  align-self: center;
+  margin: 1.2rem 0;
+}
+
+.signInHelp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rememberCheckBox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.rememberCheckBox > span {
+  color: #a5a5a5;
+  padding: 0.2rem 0.25rem;
+  font-weight: 300;
+}
+span.rememberText {
+  font-size: 0.8rem;
+}
+
+.rememberInfo > input {
+  height: 1rem;
+  width: 1rem;
+  /* border-style: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  transition-duration: 0.3s;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer; */
+}
+
+.rememberInfo > input:checked {
+  border: 1px solid #6500ff;
+  background-color: #6500ff;
+}
+
+.resetPassword {
+  justify-self: flex-end;
+  margin-right: 1rem;
+}
+
+.resetPassword a {
+  font-size: 0.8rem;
+}
+
+.loginBtn {
+  width: 400px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #6500ff;
+  border-radius: 8px;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 2.5rem 0;
+}
+
+.loginBtn:hover {
+  background-color: #ff0000;
+}
+
+.altOption {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.altOption .link {
+  text-decoration: none;
+  color: #7100ff;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.altOption .link:hover {
+  text-decoration: underline;
+}
