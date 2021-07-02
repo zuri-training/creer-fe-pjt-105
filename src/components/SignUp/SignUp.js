@@ -1,14 +1,14 @@
+import React from 'react'
 import image from './download (2).png'
 import './SignUp.css';
 
 
-
-function App() {
+ function SignUp() {
   return (
     <div className="App">
      <h6 id="marginWork">
             MyIssues
-        </h6> 
+        </h6>
         <h2 id="marginWork">
             Get Started
         </h2>
@@ -16,7 +16,7 @@ function App() {
             Let's get you all set up, so you can verify your personal account and begin setting up your account.
         </p>
         <div id="marginWork" className="Google">
-        <img src={image}/>
+        <img src={image} />
             <a id="Google" href="#" >Sign up with Google</a>
         </div>
         <div class="separator">or</div>
@@ -50,5 +50,4 @@ function App() {
     </div>
   );
 }
-
 export default SignUp;
