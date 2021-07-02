@@ -1,3 +1,4 @@
+import React from "react" 
 import image from './download (2).png'
 import './SignUp.css';
 
@@ -15,7 +16,7 @@ import './SignUp.css';
             Let's get you all set up, so you can verify your personal account and begin setting up your account.
         </p>
         <div id="marginWork" className="Google">
-        <img src={image} alt ="My image"/>
+        <img src={image}/>
             <a id="Google" href="#" >Sign up with Google</a>
         </div>
         <div class="separator">or</div>
