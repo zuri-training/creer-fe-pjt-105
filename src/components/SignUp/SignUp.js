@@ -1,4 +1,3 @@
-import React from 'react'
 import image from './download (2).png'
 import './SignUp.css';
 
