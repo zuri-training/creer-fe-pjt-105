@@ -1,5 +1,5 @@
 import './LandingPage.css';
-import { Add } from '@material-ui/icons';
+import { GrAdd } from 'react-icons/gr';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
@@ -116,7 +116,7 @@ const LandingPage = () => {
                 <div className='faqsQuestionAndAnswer'>
                   <div className='faqsQuestion'>
                     <p>I am totally new to this “website thing”. How does the whole thing work?</p>
-                    <Add className='addBtn'/>
+                    <GrAdd className='addBtn'/>
                   </div>
                   <div className='faqsAnswer closed'>
                     <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
@@ -126,7 +126,7 @@ const LandingPage = () => {
                 <div className='faqsQuestionAndAnswer'>
                   <div className='faqsQuestion'>
                     <p>Do you provide support  to individuals and community?</p>
-                    <Add className='addBtn'/>
+                    <GrAdd className='addBtn'/>
                   </div>
                   <div className='faqsAnswer closed'>
                     <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
@@ -136,7 +136,7 @@ const LandingPage = () => {
                 <div className='faqsQuestionAndAnswer'>
                   <div className='faqsQuestion'>
                     <p>Who can I talk to if I have a question, complaint or need technical support?</p>
-                    <Add className='addBtn'/>
+                    <GrAdd className='addBtn'/>
                   </div>
                   <div className='faqsAnswer closed'>
                     <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
@@ -146,7 +146,7 @@ const LandingPage = () => {
                 <div className='faqsQuestionAndAnswer'>
                   <div className='faqsQuestion'>
                     <p>Who can use the Creer platform?</p>
-                    <Add className='addBtn'/>
+                    <GrAdd className='addBtn'/>
                   </div>
                   <div className='faqsAnswer closed'>
                     <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
@@ -156,7 +156,7 @@ const LandingPage = () => {
                 <div className='faqsQuestionAndAnswer'>
                   <div className='faqsQuestion'>
                     <p>What kinds of posts are allowed on Creer?</p>
-                    <Add className='addBtn'/>
+                    <GrAdd className='addBtn'/>
                   </div>
                   <div className='faqsAnswer closed'>
                     <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
