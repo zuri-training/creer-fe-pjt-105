@@ -16,7 +16,7 @@ const LandingPage = () => {
           <section className='hero'>
             <div className='heroText'>
               <h1>Share problems, Discover solutions, Explore the community.</h1>
-              <p>Share your project ideas with developers and non-developers all around the world</p>
+              <p>Share your project ideas with developers and non-developers all around the world.</p>
               <button>Get Started</button>
             </div>
             <div className='heroImage'>

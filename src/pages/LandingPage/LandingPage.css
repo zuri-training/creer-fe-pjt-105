@@ -2,7 +2,7 @@
 /* Hero Section */
 .hero {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
