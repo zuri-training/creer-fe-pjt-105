@@ -16,19 +16,19 @@ const SideBar = () => {
                 <li className='yourCommunities'><BsPeople size='1.5em'/><p>Your Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
                     <ul className='communityList'>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} className='sideBarCommunityImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/communityImage1.png'} className='sideBarCommunityImage'/>
                             <p>Frontend</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} className='sideBarCommunityImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/communityImage2.png'} className='sideBarCommunityImage'/>
                             <p>Design</p>
                         </li> 
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} className='sideBarCommunityImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/communityImage3.png'} className='sideBarCommunityImage'/>
                             <p>JavaScript</p>
                         </li> 
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} className='sideBarCommunityImage'/>
+                            <img src={process.env.PUBLIC_URL + '/assets/communityImage4.png'} className='sideBarCommunityImage'/>
                             <p>Reactjs</p>
                         </li> 
                     </ul>

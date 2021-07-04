@@ -5,7 +5,7 @@ import './SignUp.css';
 
  function SignUp() {
   return (
-    <div className="App">
+    <div className="signUp">
      <h6 id="marginWork">
             MyIssues
         </h6>

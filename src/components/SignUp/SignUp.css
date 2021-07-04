@@ -1,7 +1,10 @@
-h6{
+  
+  /* Added the class .signUp to make it specific to the signup page */
+  .signUp h6{
     color: red;
   }
-  p{
+  /* Added the class .signUp to make it specific to the signup page */
+  .signUp p{
     font-size: 11px;
   }
   
@@ -24,7 +27,8 @@ h6{
     text-decoration: none;
     color: black;
   }
-  img{
+  /* Added the class .signUp to make it specific to the signup page */
+  .signUp img{
     width: 25px;
     height: 25px;
     position: relative;
@@ -55,11 +59,14 @@ h6{
   .separator:not(:empty)::after {
     margin-left: 15px;
   }
-  body{
+
+  /* by using the body tag, you are affecting all other parts of the project */
+  /* body{
     margin-left: 10%;
     margin-right: 10%;
-  }
-  .input{
+  } */ 
+  /* Added the class .signUp to make it specific to the signup page */
+  .signup .input{
     height: 30px;
     width: 80%;
     margin-bottom: 30px;
@@ -71,13 +78,15 @@ h6{
     border-right: 1px solid rgb(207, 202, 202);
     padding-left: 20px;
   }
-  .form{
+  /* Added the class .signUp to make it specific to the signup page */
+  .signup .form{
     display: flex;
     text-align: center;
     margin-left: 10px;
   
   }
-  button{
+  /* Added the class .signUp to make it specific to the signup page */
+  .signup button{
     background-color: rgb(120, 17, 218);
     border: none;
     width: 42%;
@@ -100,7 +109,8 @@ h6{
     .separator{
         width: 80%;
     }
-    button{
+    /* Added the class .signUp to make it specific to the signup page */
+    .signup button{
         width: 42%;
     }
     
@@ -109,16 +119,19 @@ h6{
     .Google{
         width: 90%;
     }
-    button{
+    /* Added the class .signUp to make it specific to the signup page */
+    .signup button{
         width: 38%;
     }
     
   }
   @media (max-width:500px) {
-   .form{
+    /* Added the class .signUp to make it specific to the signup page */
+   .signup .form{
      display: block;
    } 
-   .input{
+   /* Added the class .signUp to make it specific to the signup page */
+   .signup .input{
      width: 91%;
      padding-left: 10px;
      margin-bottom: 30px;
@@ -131,7 +144,8 @@ h6{
    .Google{
      margin-left: -5%;
    }
-   button{
+   /* Added the class .signUp to make it specific to the signup page */
+   .signup button{
      width: 92%;
      margin-top: 30px;
      padding: 10px;
@@ -139,7 +153,8 @@ h6{
      margin-bottom: 10px;
   
    }
-   label{
+   /* Added the class .signUp to make it specific to the signup page */
+   .signup label{
      font-size: 12px;
    }
   .paragraph{

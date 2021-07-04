@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+/* Commented these out becasue they are redundant, check the index.css to see them. Using * will affect all parts of the project. use the classname given to your feature to select the elements you want to select */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 
 * {
   padding: 0;
@@ -6,7 +7,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
-}
+} */
 
 .signIn {
   display: flex;
@@ -34,8 +35,8 @@
   margin: auto;
   text-align: center;
 }
-
-.title {
+/* Added the .signIn class to make it specific to the signIn page */
+.signIn .title {
   color: #ff0000;
   font-size: 1.3rem;
   font-weight: 500;
@@ -140,8 +141,8 @@ span.rememberText {
 .resetPassword a {
   font-size: 0.8rem;
 }
-
-.loginBtn {
+/* Added the .signIn class to make it specific to the signIn page */
+.signIn .loginBtn {
   width: 400px;
   font-weight: 600;
   color: #ffffff;
@@ -151,8 +152,8 @@ span.rememberText {
   padding: 0.6rem 1.2rem;
   margin: 2.5rem 0;
 }
-
-.loginBtn:hover {
+/* Added the .signIn class to make it specific to the signIn page */
+.signIn .loginBtn:hover {
   background-color: #ff0000;
 }
 
