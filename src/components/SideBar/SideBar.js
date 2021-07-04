@@ -7,14 +7,20 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 
 
 const SideBar = () => {
+
+    const youCommunityListToggle = () => {
+        const communityList = document.getElementById('yourCommunityList');
+        communityList.classList.toggle('noDisplay');
+    }
+
     return (
         <div className='sideBar'>
             <ul className='mainSideBarOptions'>
                 <li className='home'><AiOutlineHome size='1.5em'/><p>Home</p></li>
                 <li className='savedPosts'><FaRegBookmark size='1.5em'/><p>Saved posts</p></li>
                 <li className='tags'><FiHash size='1.5em'/><p>Tags</p></li>
-                <li className='yourCommunities'><BsPeople size='1.5em'/><p>Your Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
-                    <ul className='communityList'>
+                <li className='yourCommunities' onClick={youCommunityListToggle}><BsPeople size='1.5em'/><p>Your Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
+                    <ul className='yourCommunityList' id='yourCommunityList'>
                         <li>
                             <img src={process.env.PUBLIC_URL + '/assets/communityImage1.png'} className='sideBarCommunityImage'/>
                             <p>Frontend</p>

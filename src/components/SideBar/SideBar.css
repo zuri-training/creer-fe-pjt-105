@@ -40,9 +40,12 @@
     padding-left: 5px;
 }
 
-.communityList {
-    /* display: none; */
+.yourCommunityList {
     margin-left: 20px;
+}
+
+.yourCommunityList.noDisplay {
+    display: none;
 }
 
 .sideBarCommunityImage {

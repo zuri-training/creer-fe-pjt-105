@@ -140,14 +140,15 @@
     background-color: red;
     color: #fff;
     font-size: 12px;
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -1px;
-    right: 2px;
+    top: -2px;
+    right: 0;
 }
 
 
