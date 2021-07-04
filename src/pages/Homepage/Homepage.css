@@ -1,6 +1,8 @@
 main {
     width: 100%;
-    min-height: 100vh;
-    padding-top: 100px;
+    min-height: calc(100vh - 70px);
+    display: flex;
     background-color: rgb(240, 240, 240);
 }
+
+
