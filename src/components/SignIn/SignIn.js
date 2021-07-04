@@ -5,7 +5,7 @@ const SignIn = () => {
     <div className="signIn">
       <div className="signInInfo">
         <div className="signInHeading">
-          <h1 className="title">Creer</h1>
+          <img className="title" src='' alt='Creer logo' />
         </div>
         <div className="signInFormContainer">
           <form className="signInForm">
@@ -26,22 +26,25 @@ const SignIn = () => {
               id="email-address"
               placeholder="Email"
               required
-            ></input>
+            />
             <input
               className="signInInput"
               placeholder="Password"
+              type='password'
+              name='password'
+              id='password'
               required
-            ></input>
+            />
             <div className="signInHelp">
               <div className="rememberInfo">
-              <input type='checkbox' name='remember' id='remember'></input>
+              <input type='checkbox' name='remember' id='remember' />
               <label for='remember' className='rememberCheckBox'>
               <span className='rememberText'>Remember me</span></label></div>
               <div className="link resetPassword">
                 <a href="">Reset Password?</a>
               </div>
             </div>
-            <button className="loginBtn">Login</button>
+            <button className="signInBtn">Login</button>
             <p className='altOption'>
               Don't have an account?{" "}
               <a className="link" href="">
@@ -51,8 +54,10 @@ const SignIn = () => {
           </form>
         </div>
       </div>
-      <div className="bannerImage">
-        <img src={process.env.PUBLIC_URL + "/assets/"} alt="illustration" />
+      <div className='banner'>
+        <div className="bannerImage">
+          <img src={process.env.PUBLIC_URL + "/assets/"} alt="illustration" />
+        </div>
       </div>
     </div>
   );

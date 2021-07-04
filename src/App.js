@@ -23,6 +23,7 @@ function App() {
     <div className="App">
         {/* When you are building a component/feature/page add it to here to see your changes in realtime */}
         <LandingPage />
+        <SignIn />
     </div>
   );
 }
