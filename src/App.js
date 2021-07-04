@@ -2,6 +2,7 @@ import './App.css'
 import LandingPage from './pages/LandingPage/LandingPage';
 import Homepage from './pages/Homepage/Homepage';
 import SignIn from './components/SignIn/SignIn';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
         {/* When you are building a component/feature/page add it to here to see your changes in realtime */}
-        <SignIn />
+        <SignUp />
     </div>
   );
 }
