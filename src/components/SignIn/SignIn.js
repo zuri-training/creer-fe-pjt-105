@@ -1,20 +1,21 @@
 import "./SignIn.css";
+import { FcGoogle } from 'react-icons/fc'
 
 const SignIn = () => {
   return (
     <div className="signIn">
       <div className="signInInfo">
         <div className="signInHeading">
-          <h1 className="title">Creer</h1>
+          <img className="title" src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Creer logo' />
         </div>
         <div className="signInFormContainer">
           <form className="signInForm">
             <h2 className="loginTitle">Login</h2>
             <p className='welcomeText'>Welcome back! It's nice to have you back</p>
-              <button className="googleSignInBtn">
-                {/* <img src='./google.jpeg'></img> */}
-                <a href='' className='link'>Continue with Google</a>
-              </button>
+            <button className="googleSignInBtn">
+              <FcGoogle className='googleIcon' />
+              <a href='#' className='link'>Continue with Google</a>
+            </button>
             <div className="loginBreak">
               <span className="breakText">or</span>
             </div>
@@ -26,22 +27,25 @@ const SignIn = () => {
               id="email-address"
               placeholder="Email"
               required
-            ></input>
+            />
             <input
               className="signInInput"
               placeholder="Password"
+              type='password'
+              name='password'
+              id='password'
               required
-            ></input>
+            />
             <div className="signInHelp">
               <div className="rememberInfo">
-              <input type='checkbox' name='remember' id='remember'></input>
-              <label for='remember' className='rememberCheckBox'>
-              <span className='rememberText'>Remember me</span></label></div>
-              <div className="link resetPassword">
-                <a href="">Reset Password?</a>
+                <input type='checkbox' name='remember' id='remember' />
+                <label for='remember' className='rememberCheckBox'>
+                  <span className='rememberText'>Remember me</span></label></div>
+              <div className="resetPassword">
+                <a href="" className='link'>Reset Password?</a>
               </div>
             </div>
-            <button className="loginBtn">Login</button>
+            <button className="signInBtn">Login</button>
             <p className='altOption'>
               Don't have an account?{" "}
               <a className="link" href="">
@@ -51,8 +55,10 @@ const SignIn = () => {
           </form>
         </div>
       </div>
-      <div className="bannerImage">
-        <img src={process.env.PUBLIC_URL + "/assets/"} alt="illustration" />
+      <div className='banner'>
+        <div className="bannerImage">
+          <img src={process.env.PUBLIC_URL + "/assets/loginImage.png"} alt="login illustration" />
+        </div>
       </div>
     </div>
   );
