@@ -6,43 +6,47 @@ import './SignUp.css';
  function SignUp() {
   return (
     <div className="signUp">
-     <h6 id="marginWork">
-            MyIssues
-        </h6>
-        <h2 id="marginWork">
+        <div className='Logo'>
+                <img className="SignUpLogo" src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
+            </div>
+        <h2 id="SignUpH2">
             Get Started
         </h2>
-        <p id="marginWork">
-            Let's get you all set up, so you can verify your personal account and begin setting up your account.
+        <p className="SignUpP1" id="marginWork">
+            Let's get you all set up, so you can verify your personal account and begin setting up your account
+        </p>
+        <p className="SignUpP2" id="marginWork">
+            Let's get you all set up, so you can verify your personal account
         </p>
         <div id="marginWork" className="Google">
-        <img src={image}/>
+        <img className="SignUpImage" src={image} alt="photo"/>
             <a id="Google" href="#" >Sign up with Google</a>
         </div>
-        <div class="separator">or</div>
-        <div className="form">
-            <div className="input1">
-            <input className="input" placeholder="Firstname" ></input>
-            <input id="input" type="number" className="input" placeholder="Phone Number" ></input>
-            <input className="input" type="password" placeholder="Password" ></input>
+        <div className="separator">or</div>
+        <div className="SignUpForm" id="form">
+            <div> 
+            <input className="SignUpInput" placeholder="Firstname" ></input>
+            <input className="SignUpInput" id="input" type="number" placeholder="Phone Number" ></input>
+            <input className="SignUpInput" type="password" placeholder="Password" ></input>
             </div>
             <div className="input2">
-            <input id="input" className="input" placeholder="Lastname" ></input>
-            <input className="input" type="email" placeholder="Email" ></input>
-            <input id="input" className="input" type="password" placeholder="Confirm Password" ></input>
+            <input className="SignUpInput" id="input" placeholder="Lastname" ></input>
+            <input className="SignUpInput" type="email" placeholder="Email" ></input>
+            <input className="SignUpInput" id="input" type="password" placeholder="Confirm Password" ></input>
             </div>
             
         </div>
         <div id="marginWork">
-        <input
+        <input 
           type="checkbox"
-          value="ckeckBox"
+          value="ckeckBoxI"
           id="checkBox"
           defaultChecked={false}/>
-            <label for="ckeckid">I agree to the terms of service and privacy policy.</label>
+            <label id="SignUpLabel" for="ckeckid">I agree to the terms of service and privacy policy.</label>
         </div>
 
-            <button id="marginWork" onClick="document.location='#'">Register</button>
+            <button className="SignUpButton"
+            id="marginWork" onClick="document.location='#'">Register</button>
             <p className="paragraph" id="marginWork">
                 Already have an account?
                 <a href="https://www.google.com/">Login</a>
