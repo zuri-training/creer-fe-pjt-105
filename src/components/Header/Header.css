@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgb(255, 255, 255);
 }
 
 .header .logo {
@@ -76,7 +76,7 @@
 }
 
 .headerLeft {
-    flex: 2;
+    flex: 1.5;
 }
 
 .headerCenter {
@@ -87,7 +87,7 @@
 }
 
 .headerCenter .searchBox {
-    width: 80%;
+    width: 78%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -142,7 +142,7 @@
     font-size: 12px;
     width: 15px;
     height: 15px;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -153,7 +153,7 @@
 
 
 
-.profileImage {
+.headerRight .profileImage {
     margin-left: 35px;
     width: 35px;
     height: 35px;

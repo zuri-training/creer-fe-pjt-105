@@ -20,6 +20,11 @@ function App() {
     
   // }
 
+  const postCommentsToggle = () => {
+      const postComments = document.getElementById('postComments');
+      postComments.classList.toggle('noDisplay');
+  }
+
   return (
     <div className="App">
         {/* When you are building a component/feature/page add it to here to see your changes in realtime */}

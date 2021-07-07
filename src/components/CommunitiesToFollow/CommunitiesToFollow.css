@@ -1,0 +1,47 @@
+.communitiesToFollow {
+    margin-top: 20px;
+    width: 100%;
+    /* padding-bottom: 20px; */
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.communitiesToFollowHeader {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.communitiesToFollowHeaderText {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+
+.communitiesToFollowList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.communitiesToFollowListItem {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.communitiesToFollowListItem img {
+    margin-right: 10px;
+}
+
+.communitiesToFollowListItem p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.775);
+}

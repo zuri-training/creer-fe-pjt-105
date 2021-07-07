@@ -2,7 +2,7 @@ main {
     width: 100%;
     min-height: calc(100vh - 70px);
     display: flex;
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
 }
 
 
