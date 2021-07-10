@@ -2,37 +2,40 @@ import './Header.css';
 import { BsSearch } from 'react-icons/bs';
 import { VscBell } from 'react-icons/vsc';
 
-const Header = () => {
-    return (
-        <div className='header'>
-            <div className='headerLeft'>
-                <div className='logo'>
-                    <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
-                </div>
-            </div>
-            <div className='headerCenter'>
-                <div className='searchBox'>
-                    <BsSearch className='searchIcon' size='0.9em'/>
-                    <input type='text' placeholder='Search posts, answers, communities...' />
-                </div>
-            </div>
-            <div className='headerRight'>
-                <div className='notification'>
-                    <VscBell className='notificationIcon' size='1.7em'/>
-                    <span>1</span>
-                </div>
-                <div className='profileImage'>
-                    <img src={process.env.PUBLIC_URL + '/assets/profileImage.png'} alt='' />
-                </div>
-            </div>
-        </div>
-    )
-}
+const Header = ({homePage}) => {
 
-export default Header;
+    const HomePageHeader = () => {
+        return (
+            <>
+                <div className='headerLeft'>
+                    <div className='logo'>
+                        <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
+                    </div>
+                </div>
+                <div className='headerCenter'>
+                    <div className='searchBox'>
+                        <BsSearch className='searchIcon' size='0.9em'/>
+                        <input type='text' placeholder='Search posts, answers, communities...' />
+                    </div>
+                </div>
+                <div className='headerRight'>
+                    <div className='notification'>
+                        <VscBell className='notificationIcon' size='1.7em'/>
+                        <span>1</span>
+                    </div>
+                    <div className='profileImage'>
+                        <img src={process.env.PUBLIC_URL + '/assets/profileImage.png'} alt='' />
+                    </div>
+                </div>  
+            </>
+
+        )
+    }
 
 
-{/* <div className='header'>
+    const LandingPageHeader = () => {
+        return(
+            <>
                 <div className='logo'>
                     <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
                 </div>
@@ -44,4 +47,26 @@ export default Header;
                         <li className='headerBtn signUpBtn'>Get Started</li>
                     </ul>
                 </div>
+            </>
+        )
+    }
+
+
+    return (
+        <div className='header'>
+            {!homePage 
+            ? 
+             <LandingPageHeader />
+            : 
+             <HomePageHeader />
+            }
+        </div>
+    )
+}
+
+export default Header;
+
+
+{/* <div className='header'>
+                
         </div> */}

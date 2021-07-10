@@ -103,7 +103,7 @@
 }
 
 .postFooter {
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,8 +117,10 @@
 }
 
 .footerLeftSide {
-    flex: 4;
+    flex: 6;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .footerLeftSide .postCommentIconHolder {
@@ -127,11 +129,29 @@
     align-items: center;
 }
 
+
+
 .postCommentIconHolder {
     padding: 2px 4px;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.713);
     border-radius: 5px;
+}
+
+.postLikes {
+    margin: 0 10px;
+    padding: 2px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.713);
+    border-radius: 5px;
+}
+
+.likeIcon.liked,
+.likeCounter.liked {
+    color: #2e69ff;
 }
 
 .postCommentIconHolder:hover,
@@ -141,12 +161,11 @@
 }
 
 .footerRightSide {
-    flex: 6;
+    flex: 4;
     display: flex;
     justify-content: flex-end;
 }
 
-.footerRightSide .postLikes,
 .footerRightSide .postSave {
     margin: 0 10px;
     padding: 2px 4px;
@@ -168,6 +187,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(204, 204, 204, 0.138);
 }
 
 .postAComment .profileImage {

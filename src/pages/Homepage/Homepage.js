@@ -3,12 +3,13 @@ import Header from '../../components/Header/Header';
 import SideBar from '../../components/SideBar/SideBar';
 import RightBar from '../../components/RightBar/RightBar';
 import Feed from '../../components/Feed/Feed';
+import LandingPage from '../LandingPage/LandingPage';
 
 const Homepage = () => {
     return (
         <div className='homepage'>
             {/* Header */}
-            <Header />
+            <Header homePage/>
 
             {/* Main Section */}
             <main>

@@ -1,11 +1,18 @@
+import { useState } from 'react';
 import './App.css'
 import LandingPage from './pages/LandingPage/LandingPage';
 import Homepage from './pages/Homepage/Homepage';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
-  
+
   // const showFaqsAnswer = (event) => {
   //   // const addButton = document.querySelectorAll('.addBtn');
   //   const btn = document.getElementById('1');
@@ -20,15 +27,26 @@ function App() {
     
   // }
 
-  const postCommentsToggle = () => {
-      const postComments = document.getElementById('postComments');
-      postComments.classList.toggle('noDisplay');
-  }
-
   return (
     <div className="App">
         {/* When you are building a component/feature/page add it to here to see your changes in realtime */}
-        <Homepage />
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <LandingPage />
+            </Route>
+            <Route exact path="/homepage">
+              <Homepage />
+            </Route>
+            <Route path="/signin">
+              <SignIn />
+            </Route>
+            <Route path="/signup">
+              <SignUp />
+            </Route>
+          </Switch>
+        </Router>
+        
     </div>
   );
 }
