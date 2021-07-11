@@ -202,7 +202,9 @@
 .postAComment textarea {
     width: 65%;
     height: 34px;
+    padding: 6px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .postACommentBtn {

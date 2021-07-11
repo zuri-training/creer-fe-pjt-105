@@ -1,6 +1,7 @@
 import './Header.css';
 import { BsSearch } from 'react-icons/bs';
 import { VscBell } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 
 const Header = ({homePage}) => {
 
@@ -37,14 +38,14 @@ const Header = ({homePage}) => {
         return(
             <>
                 <div className='logo'>
-                    <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
+                    <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='creer logo'/>
                 </div>
                 <div className='nav-items'>
                     <ul>
                         <li>Contact us</li>
                         <li>Learn more</li>
-                        <li className='headerBtn loginBtn'>Login</li>
-                        <li className='headerBtn signUpBtn'>Get Started</li>
+                        <li className='headerBtn loginBtn'><Link to='/signin' style={{color:'#000'}}>Login</Link></li>
+                        <li className='headerBtn signUpBtn'><Link to='/signup' style={{color:'#fff'}}>Get Started</Link></li>
                     </ul>
                 </div>
             </>

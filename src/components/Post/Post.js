@@ -9,11 +9,23 @@ import { Users } from '../../dummyData';
 const Post = ({ post, comments, onPostCommentsToggle }) => {
 
     const [likes, setLikes] = useState(post.likes);
-    const [isLiked, setIsLiked] = useState(false)
+    const [isLiked, setIsLiked] = useState(false);
+    const [isDisplayed, setIsDisplayed] = useState(false);
+    const [isSaved, setIsSaved] = useState(false)
+
+
 
     const likeHandler = () => {
         setLikes(!isLiked ? likes +1 : likes -1);
         setIsLiked(!isLiked);
+    }
+
+    const commentDisplayHandler = () => {
+        setIsDisplayed(!isDisplayed);
+    }
+
+    const savePost = () => {
+        setIsSaved(!isSaved);
     }
 
     
@@ -39,22 +51,22 @@ const Post = ({ post, comments, onPostCommentsToggle }) => {
             </div>
             <div className='postFooter'>
                 <div className='footerLeftSide'>
-                    <div className='postCommentIconHolder' id={post.id} onClick={() => onPostCommentsToggle(post.id)}>
+                    <div className='postCommentIconHolder' id={post.id} onClick={commentDisplayHandler}>
                         <FiMessageSquare className='commentIcon' size='1.5em'/>
                         <p>{post.comments.length}</p>
                     </div>
                     <div className='postLikes' onClick={likeHandler}>
-                        <BiLike className={`likeIcon ${post.isLiked ? 'liked' : ''}`} size='1.5em'/>
-                        <p className={`likeCounter ${post.isLiked ? 'liked' : ''}`}>{likes}</p>
+                        <BiLike className={`likeIcon ${isLiked ? 'liked' : ''}`} size='1.5em'/>
+                        <p className={`likeCounter ${isLiked ? 'liked' : ''}`}>{likes}</p>
                     </div>
                 </div>
                 <div className='footerRightSide'>
-                    <div className='postSave'>
+                    <div className='postSave' onClick={savePost}>
                         <BiBookmark className='saveIcon' size='1.5em'/>
                     </div>
                 </div>
             </div>
-            <div className='postComments' id={post.id}>
+            <div className={`postComments ${!isDisplayed ? 'noDisplay' : ''}`}>
                 <div className='postAComment'>
                     <img src={process.env.PUBLIC_URL + '/assets/profileImage.png'} alt='' className='profileImage' />
                     <textarea name='comment'  id='comment' placeholder='Write something...'></textarea>

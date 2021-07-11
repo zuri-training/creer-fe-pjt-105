@@ -1,5 +1,6 @@
 import "./SignIn.css";
 import { FcGoogle } from 'react-icons/fc'
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -45,7 +46,7 @@ const SignIn = () => {
                 <a href="" className='link'>Reset Password?</a>
               </div>
             </div>
-            <button className="signInBtn">Login</button>
+            <button className="signInBtn"><Link to='/homepage' style={{color:'#fff'}}>Login</Link></button>
             <p className='altOption'>
               Don't have an account?{" "}
               <a className="link" href="">
