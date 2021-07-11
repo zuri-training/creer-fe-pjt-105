@@ -1,0 +1,165 @@
+  
+  /* Added the class .signUp to make it specific to the signup page */
+  .signUp h6{
+    color: red;
+  }
+  /* Added the class .signUp to make it specific to the signup page */
+  .signUp p{
+    font-size: 11px;
+  }
+  
+  .Google{
+    height: 30px;
+    width: 91%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(192, 188, 188);
+    border-top: 1px solid rgb(243, 236, 236);
+    border-left: 1px solid rgb(207, 202, 202);
+    border-right: 1px solid rgb(207, 202, 202);
+    padding-bottom: 5px;
+  }
+  .Google,a{
+    text-align: center;
+    text-decoration: none;
+  }
+  #Google{
+    text-decoration: none;
+    color: black;
+  }
+  /* Added the class .signUp to make it specific to the signup page */
+  .signUp img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    left: -10px;
+  }
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgb(201, 193, 193);
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: 15px;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: 15px;
+  }
+
+  /* by using the body tag, you are affecting all other parts of the project */
+  /* body{
+    margin-left: 10%;
+    margin-right: 10%;
+  } */ 
+  /* Added the class .signUp to make it specific to the signup page */
+  .signup .input{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(192, 188, 188);
+    border-top: 1px solid rgb(243, 236, 236);
+    border-left: 1px solid rgb(207, 202, 202);
+    border-right: 1px solid rgb(207, 202, 202);
+    padding-left: 20px;
+  }
+  /* Added the class .signUp to make it specific to the signup page */
+  .signup .form{
+    display: flex;
+    text-align: center;
+    margin-left: 10px;
+  
+  }
+  /* Added the class .signUp to make it specific to the signup page */
+  .signup button{
+    background-color: rgb(120, 17, 218);
+    border: none;
+    width: 42%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+    padding-bottom: 25px;
+  }
+  #marginWork{
+    margin-left: 5%;
+  }  
+  @media (min-width: 1338px){
+    .Google{
+        width: 91%;
+    margin-right: 50%;
+    }
+    .separator{
+        width: 80%;
+    }
+    /* Added the class .signUp to make it specific to the signup page */
+    .signup button{
+        width: 42%;
+    }
+    
+  }
+  @media (min-width:1332) {
+    .Google{
+        width: 90%;
+    }
+    /* Added the class .signUp to make it specific to the signup page */
+    .signup button{
+        width: 38%;
+    }
+    
+  }
+  @media (max-width:500px) {
+    /* Added the class .signUp to make it specific to the signup page */
+   .signup .form{
+     display: block;
+   } 
+   /* Added the class .signUp to make it specific to the signup page */
+   .signup .input{
+     width: 91%;
+     padding-left: 10px;
+     margin-bottom: 30px;
+     padding: 5px;
+   }
+   .separator{
+     width: 91%;
+     margin-left: 5%;
+   }
+   .Google{
+     margin-left: -5%;
+   }
+   /* Added the class .signUp to make it specific to the signup page */
+   .signup button{
+     width: 92%;
+     margin-top: 30px;
+     padding: 10px;
+     padding-bottom: 25px;
+     margin-bottom: 10px;
+  
+   }
+   /* Added the class .signUp to make it specific to the signup page */
+   .signup label{
+     font-size: 12px;
+   }
+  .paragraph{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  }

@@ -1,0 +1,140 @@
+.comment {
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.207);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.207); */
+    background-color: rgba(204, 204, 204, 0.138);
+}
+
+
+.commentHeader {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentHeaderLeftSide {
+    flex: 6;
+    display: flex;
+    align-items: center;
+}
+
+.commentHeaderLeftSide .userprofileImage {
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    cursor: pointer;
+    /* border: 1px solid #ccc; */
+    border-radius: 50%;
+}
+
+.commentInfo p {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.commentInfo .userName {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.commentBody {
+    padding: 5px 35px 5px 70px;
+    cursor: pointer;
+}
+
+.commentBody p {
+    margin: 10px 0;
+}
+
+.commentBody .commentBodyText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.commentFooter {
+    padding: 5px 20px 5px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.207); */
+}
+
+.commentFooter p {
+    margin: 0 0 0 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.commentfooterLeftSide {
+    display: flex;
+}
+
+.commentfooterLeftSide .commentLikes,
+.commentfooterLeftSide .commentReply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commentLikes,
+.commentReply {
+    padding: 2px 5px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.713);
+    border-radius: 5px;
+}
+
+.likeIcon.liked,
+.likeCounter.liked {
+    color: #2e69ff;
+}
+
+.commentReply {
+    margin-left: 20px;
+}
+
+.commentLikes:hover,
+.commentReply:hover {
+    background-color: rgba(55, 87, 255, 0.05);
+}
+
+.commentReplies.noDisplay {
+    display: none;
+}
+
+.postAReply {
+    margin-left: 50px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(204, 204, 204, 0.138); */
+}
+
+.postAReply .profileImage {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    cursor: pointer;
+    /* border: 1px solid #ccc; */
+    border-radius: 50%;
+}
+
+.postAReply textarea {
+    width: 65%;
+    height: 34px;
+    padding: 6px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.postAReplyBtn {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}

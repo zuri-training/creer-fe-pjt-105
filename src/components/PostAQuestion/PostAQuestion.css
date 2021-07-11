@@ -1,0 +1,93 @@
+.postAQuestion {
+    border-radius: 5px;
+}
+
+.postAQuestionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postAQuestion .postAQuestionBtn {
+    width: 87%;
+    height: 48px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #d1d1d18c;
+}
+
+.postAQuestionBtn:hover {
+    border: 1px solid #cccbcbdb;
+}
+
+.postAQuestionBtn p {
+    font-size: 19px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.postAQuestion .profileImage {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#postAQuestionBody {
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #d1d1d18c;
+}
+
+.postAQuestionBody.noDisplay {
+    display: none;
+}
+
+.postAQuestionBodyTop {
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.postAQuestionBodyTop p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.405);
+}
+
+.postAQuestionBodyCenter {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.postAQuestionBodyCenter textarea {
+    width: 100%;
+    height: 100px;
+    border-color: #ccc;
+    border-radius: 5px;
+}
+
+.postAQuestionBodyBottom {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.posAQuestionBtn {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+}

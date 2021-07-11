@@ -1,0 +1,33 @@
+.topPicks {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.topPicksTitleText {
+    margin: 15px 0;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+.topPicksList {
+    padding-left: 10px;
+}
+
+.topPicksListItem {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.734);
+    /* border-top: 1px solid #ccc; */
+}
+
+.topPicksListItem:hover {
+    color: #000;
+}

@@ -1,13 +1,15 @@
 .sideBar {
-    width: 300px;
-    min-height: 100vh;
-    padding: 60px 0;
+    flex: 2.2;
+    /* min-height: calc(100vh - 70px); */
+    height: fit-content;
+    padding-top: 30px;
     background-color: #fff;
 }
 
 .sideBar p {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 
@@ -23,7 +25,8 @@
 }
 
 .sideBar ul li:hover {
-    background-color: aquamarine;
+    color: #3757FF;
+    background-color: rgba(55, 87, 255, 0.05);
 }
 
 .sideBar ul li p {
@@ -35,7 +38,29 @@
     align-items: center;
 }
 
-.communityList {
-    display: none;
+.dropdownIcon {
+    padding-left: 5px;
+}
+
+.yourCommunityList,
+.yourTopicsList {
     margin-left: 20px;
+}
+
+.yourTopicsList.noDisplay,
+.yourCommunityList.noDisplay {
+    display: none;
+}
+
+.yourTopicsList li p,
+.yourCommunityList li p {
+    font-size: 12px;
+}
+
+.sideBarCommunityImage,
+.sideBarTopicsImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
 }

@@ -1,0 +1,191 @@
+
+.signIn {
+  display: flex;
+  flex-direction: row;
+}
+
+.signInInfo {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.8rem;
+  justify-content: center;
+  /* padding-top: 1.4rem; */
+}
+
+.signInHeading {
+  text-align: left;
+}
+.banner {
+  background-color: #dad2ff;
+  min-width: 50vw;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner img{
+  width: 75%;
+}
+/* Added the .signIn class to make it specific to the signIn page */
+.signIn .title {
+  width: 8rem;
+  margin-bottom: -0.8rem;
+}
+
+.loginTitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0rem;
+}
+
+.welcomeText {
+  margin: 1.25rem 0;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+}
+
+.googleSignInBtn {
+  width: 392px;
+  border: 1px solid #cccaca;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.25rem;
+  
+}
+
+.googleSignInBtn .googleIcon {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.googleSignInBtn .link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+.googleSignInBtn:hover {
+  border: 2px solid #c4b8d6;
+  box-shadow: 1px 1px 4px 2px #e0e0e0;
+  cursor: pointer;
+}
+
+.loginBreak {
+  width: 392px;
+  text-align: center;
+  border-bottom: 1px solid #cccaca;
+  line-height: 0.125rem;
+  margin: 1.5rem 0 1.25rem;
+}
+
+.breakText {
+  background: #ffffff;
+  padding: 0 0.625rem;
+  font-size: 1.25rem;
+}
+
+.signInInput {
+  width: 350px;
+  border: 1px solid #cccaca;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  align-self: center;
+  margin: 0.875rem 0;
+  font-size: 1.25rem;
+  font-family: "poppins", sans-serif;
+}
+
+.signInHelp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -0.375rem;
+}
+
+.rememberCheckBox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.rememberCheckBox > span {
+  color: #a5a5a5;
+  padding: 0.25rem 0.3125rem;
+  font-weight: 300;
+}
+span.rememberText, 
+.resetPassword a {
+  font-size: 1rem;
+}
+
+.rememberInfo > input {
+  height: 0.875rem;
+  width: 0.875rem;
+  /* border-style: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  transition-duration: 0.3s;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  appearance: none; */
+}
+
+.rememberInfo > input:checked {
+  border: 1px solid #6500ff;
+  background-color: #7100ff;
+}
+
+.rememberInfo .link,
+.altOption .link {
+  text-decoration: none;
+  color: #7100ff;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.resetPassword .link:hover,
+.altOption .link:hover {
+  text-decoration: underline;
+}
+
+.resetPassword {
+  justify-self: flex-end;
+  margin-left: 7rem;
+  font-weight: 400;
+}
+
+.signInBtn {
+  width: 392px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #ffffff;
+  background-color: #6500ff;
+  border-radius: 8px;
+  border: none;
+  padding: 1.032rem 1.5rem;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+.signInBtn:hover {
+  background-color: #ff0000;
+}
+
+.altOption {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+
+
