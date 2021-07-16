@@ -63,6 +63,7 @@
     color: rgba(0, 0, 0, 0.405);
 }
 
+.postAQuestionTitleCenter,
 .postAQuestionBodyCenter {
     width: 100%;
     padding: 10px 20px;
@@ -72,9 +73,17 @@
     box-sizing: border-box;
 }
 
+.postAQuestionTitleCenter textarea {
+    width: 100%;
+    padding: 10px 5px 0 5px;
+    border-color: #ccc;
+    /* border-radius: 5px; */
+}
+
 .postAQuestionBodyCenter textarea {
     width: 100%;
     height: 100px;
+    padding: 10px 5px;
     border-color: #ccc;
     border-radius: 5px;
 }

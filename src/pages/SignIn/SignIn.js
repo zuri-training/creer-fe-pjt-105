@@ -1,8 +1,43 @@
 import "./SignIn.css";
 import { FcGoogle } from 'react-icons/fc'
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const SignIn = () => {
+
+  const [signInEmail, setSignInEmail] = useState('')
+  const [signInPassword, setSignInPassword] = useState('')
+
+  const onEmailChange = (event) => {
+    setSignInEmail(event.target.value)
+  }
+
+  const onPasswordChange = (event) => {
+    setSignInPassword(event.target.value)
+  }
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+
+    fetch('http://creer-pjt-105.herokuapp.com/auth/login', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: signInEmail,
+        password: signInPassword
+      })
+    }).then(response => response.json())
+      .then(data => console.log(data))
+    
+    // console.log({
+    //   email: signInEmail,
+    //   password: signInPassword
+    // },)
+  }
+
+
   return (
     <div className="signIn">
       <div className="signInInfo">
@@ -28,6 +63,7 @@ const SignIn = () => {
               id="email-address"
               placeholder="Email"
               required
+              onChange={onEmailChange}
             />
             <input
               className="signInInput"
@@ -36,22 +72,21 @@ const SignIn = () => {
               name='password'
               id='password'
               required
+              onChange={onPasswordChange}
             />
             <div className="signInHelp">
               <div className="rememberInfo">
                 <input type='checkbox' name='remember' id='remember' />
-                <label for='remember' className='rememberCheckBox'>
+                <label htmlFor='remember' className='rememberCheckBox'>
                   <span className='rememberText'>Remember me</span></label></div>
               <div className="resetPassword">
                 <a href="" className='link'>Reset Password?</a>
               </div>
             </div>
-            <button className="signInBtn"><Link to='/homepage' style={{color:'#fff'}}>Login</Link></button>
+            <button onClick={onSubmit} className="signInBtn"><Link to='/creer-fe-pjt-105/homepage' style={{color:'#fff'}}>Login</Link></button>
             <p className='altOption'>
               Don't have an account?{" "}
-              <a className="link" href="">
-                Register
-              </a>
+                <Link to='/creer-fe-pjt-105/signup'>Register</Link>
             </p>
           </form>
         </div>

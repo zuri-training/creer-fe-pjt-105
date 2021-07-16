@@ -1,22 +1,28 @@
   
-  /* Added the class .signUp to make it specific to the signup page */
-  .signUp h6{
-    color: red;
+  /* Added the class .signUp to make it specific to the signUp page */
+  .signUp .logo {
+    margin: 20px 0 20px 50px;
+    padding: 20px;
   }
-  /* Added the class .signUp to make it specific to the signup page */
+  
+  
+  /* Added the class .signUp to make it specific to the signUp page */
   .signUp p{
     font-size: 11px;
   }
   
-  .Google{
-    height: 30px;
-    width: 91%;
-    margin-bottom: 30px;
+  .signUp .Google{
+    height: 35px;
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
-    border-bottom: 1px solid rgb(192, 188, 188);
+    /* border-bottom: 1px solid rgb(192, 188, 188);
     border-top: 1px solid rgb(243, 236, 236);
-    border-left: 1px solid rgb(207, 202, 202);
-    border-right: 1px solid rgb(207, 202, 202);
+    border-left: 1px solid rgb(207, 202, 202); */
+    border: 1px solid rgb(207, 202, 202);
     padding-bottom: 5px;
   }
   .Google,a{
@@ -27,14 +33,17 @@
     text-decoration: none;
     color: black;
   }
-  /* Added the class .signUp to make it specific to the signup page */
-  .signUp img{
+  /* Added the class .signUp to make it specific to the signUp page */
+  .signUp .googleIcon {
+    margin-right: 10px;
+  }
+  /* .signUp img{
     width: 25px;
     height: 25px;
     position: relative;
     top: 5px;
     left: -10px;
-  }
+  } */
   .separator {
     display: flex;
     align-items: center;
@@ -65,28 +74,27 @@
     margin-left: 10%;
     margin-right: 10%;
   } */ 
-  /* Added the class .signUp to make it specific to the signup page */
-  .signup .input{
+  /* Added the class .signUp to make it specific to the signUp page */
+  .signUp input{
     height: 30px;
     width: 80%;
     margin-bottom: 30px;
     padding: 5px;
     border-radius: 5px;
-    border-bottom: 1px solid rgb(192, 188, 188);
+    /* border-bottom: 1px solid rgb(192, 188, 188);
     border-top: 1px solid rgb(243, 236, 236);
-    border-left: 1px solid rgb(207, 202, 202);
-    border-right: 1px solid rgb(207, 202, 202);
+    border-left: 1px solid rgb(207, 202, 202); */
+    border: 1px solid rgb(207, 202, 202);
     padding-left: 20px;
   }
-  /* Added the class .signUp to make it specific to the signup page */
-  .signup .form{
+  /* Added the class .signUp to make it specific to the signUp page */
+  .signUp .form{
     display: flex;
     text-align: center;
     margin-left: 10px;
-  
   }
-  /* Added the class .signUp to make it specific to the signup page */
-  .signup button{
+  /* Added the class .signUp to make it specific to the signUp page */
+  .signUp button{
     background-color: rgb(120, 17, 218);
     border: none;
     width: 42%;
@@ -109,8 +117,8 @@
     .separator{
         width: 80%;
     }
-    /* Added the class .signUp to make it specific to the signup page */
-    .signup button{
+    /* Added the class .signUp to make it specific to the signUp page */
+    .signUp button{
         width: 42%;
     }
     
@@ -119,19 +127,19 @@
     .Google{
         width: 90%;
     }
-    /* Added the class .signUp to make it specific to the signup page */
-    .signup button{
+    /* Added the class .signUp to make it specific to the signUp page */
+    .signUp button{
         width: 38%;
     }
     
   }
   @media (max-width:500px) {
-    /* Added the class .signUp to make it specific to the signup page */
-   .signup .form{
+    /* Added the class .signUp to make it specific to the signUp page */
+   .signUp .form{
      display: block;
    } 
-   /* Added the class .signUp to make it specific to the signup page */
-   .signup .input{
+   /* Added the class .signUp to make it specific to the signUp page */
+   .signUp .input{
      width: 91%;
      padding-left: 10px;
      margin-bottom: 30px;
@@ -144,8 +152,8 @@
    .Google{
      margin-left: -5%;
    }
-   /* Added the class .signUp to make it specific to the signup page */
-   .signup button{
+   /* Added the class .signUp to make it specific to the signUp page */
+   .signUp button{
      width: 92%;
      margin-top: 30px;
      padding: 10px;
@@ -153,8 +161,8 @@
      margin-bottom: 10px;
   
    }
-   /* Added the class .signUp to make it specific to the signup page */
-   .signup label{
+   /* Added the class .signUp to make it specific to the signUp page */
+   .signUp label{
      font-size: 12px;
    }
   .paragraph{
