@@ -1,0 +1,203 @@
+.profilePage {
+    width: 100%;
+    background-color: #fff;
+}
+
+.profilePageContainer {
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+
+.profilePage p {
+    margin: 0;
+    padding: 0;
+}
+
+.profilePageBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profilePageBodyLeft {
+    margin-right: 50px;
+    flex: 6;
+}
+
+.profilePageBodyRight {
+    margin-left: 50px;
+    flex: 2.5;
+}
+
+.profilePageBodyTop {
+    padding: 10px 20px;
+}
+
+.profileImageAndName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.profilePageImage {
+    margin-right: 20px;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profilePageName {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.profilePageShortDescription {
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.profilePageDescription {
+    /* margin-top: 50px; */
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+.profilePageDescriptionText {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.profilePageBodyCenter {
+    padding: 20px;
+}
+
+.profilePageStatsHolder {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profilePageFollowersHolder,
+.profilePageFollowingHolder,
+.profilePagePostsHolder {
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profilePageFollowersHolder:hover,
+.profilePageFollowingHolder:hover,
+.profilePagePostsHolder:hover {
+    background-color: rgba(233, 233, 233, 0.713);
+}
+
+.profilePageStatsText {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(151, 150, 150);
+    cursor: pointer;
+}
+
+.postsBody.noDisplay,
+.followersBody.noDisplay,
+.followingBody.noDisplay {
+    display: none;
+}
+
+.profilePageStatsText:hover {
+    color: #000;
+}
+
+
+.profilePageBodyBottom {
+    padding: 20px;
+}
+
+
+.profilePageCredentialsHeader,
+.profilePageCreateACommunityHeader {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.profilePageCredentialsHeaderText,
+.profilePageCreateACommunityHeaderText {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.editIcon {
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.editIcon:hover {
+    background-color: rgba(55, 87, 255, 0.05);
+}
+
+.profilePageCredential {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profilePageCredentialsBody,
+.profilePageCreateACommunityBody {
+    padding: 10px 0;
+}
+
+.profilePageCredential {
+    margin: 5px;
+}
+
+.profilePageCredentialText {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(133, 175, 252);
+}
+
+.joinDate {
+    color: #000;
+}
+
+.profilePageCreateACommunity {
+    margin-top: 20px;
+}
+
+.createACommunityButton {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.createACommunityIcon {
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(84, 139, 211);
+}
+
+.createACommunityText {
+    font-size: 14px;
+    font-weight: 300;
+}

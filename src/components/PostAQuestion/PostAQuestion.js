@@ -21,6 +21,9 @@ const PostAQuestion = () => {
                 <div className='postAQuestionBodyTop'>
                     <p className='postAQuestionBody'><span className='userName'>David Adewole</span> is asking</p>
                 </div>
+                <div className='postAQuestionTitleCenter'>
+                    <textarea name='post title'  id='postTitle' placeholder='Title'></textarea>
+                </div>
                 <div className='postAQuestionBodyCenter'>
                     <textarea name='question'  id='question' placeholder='Write something...'></textarea>
                 </div>

@@ -3,14 +3,16 @@ import { BsSearch } from 'react-icons/bs';
 import { VscBell } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
 
-const Header = ({homePage}) => {
+const Header = ({ landingPage }) => {
 
-    const HomePageHeader = () => {
+    const InAppHeader = () => {
         return (
             <>
                 <div className='headerLeft'>
                     <div className='logo'>
-                        <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
+                        <Link to='/creer-fe-pjt-105/homepage'>
+                            <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
+                        </Link>
                     </div>
                 </div>
                 <div className='headerCenter'>
@@ -43,9 +45,9 @@ const Header = ({homePage}) => {
                 <div className='nav-items'>
                     <ul>
                         <li>Contact us</li>
-                        <li>Learn more</li>
-                        <li className='headerBtn loginBtn'><Link to='/signin' style={{color:'#000'}}>Login</Link></li>
-                        <li className='headerBtn signUpBtn'><Link to='/signup' style={{color:'#fff'}}>Get Started</Link></li>
+                        <li>FAQs</li>
+                        <li className='headerBtn loginBtn'><Link to='/creer-fe-pjt-105/signin' style={{color:'#000'}}>Login</Link></li>
+                        <li className='headerBtn signUpBtn'><Link to='/creer-fe-pjt-105/signup' style={{color:'#fff'}}>Get Started</Link></li>
                     </ul>
                 </div>
             </>
@@ -55,11 +57,11 @@ const Header = ({homePage}) => {
 
     return (
         <div className='header'>
-            {!homePage 
+            {landingPage 
             ? 
              <LandingPageHeader />
             : 
-             <HomePageHeader />
+             <InAppHeader />
             }
         </div>
     )

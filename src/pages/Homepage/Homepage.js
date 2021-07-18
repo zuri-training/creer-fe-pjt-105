@@ -8,7 +8,7 @@ const Homepage = () => {
     return (
         <div className='homepage'>
             {/* Header */}
-            <Header homePage/>
+            <Header />
 
             {/* Main Section */}
             <main>

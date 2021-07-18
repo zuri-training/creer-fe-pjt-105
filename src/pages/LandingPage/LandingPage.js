@@ -11,14 +11,14 @@ const LandingPage = () => {
         <div className='landingPage'>
           <div className='container'>
             {/* Header */}
-            <Header />
+            <Header landingPage/>
 
             {/* Hero */}
             <section className='hero'>
               <div className='heroText'>
                 <h1>Share problems, Discover solutions, Explore the community.</h1>
                 <p>Share your project ideas with developers and non-developers all around the world.</p>
-                <button><Link to='/signup' style={{color:'#fff'}}>Get Started</Link></button>
+                <button><Link to='/creer-fe-pjt-105/signup' style={{color:'#fff'}}>Get Started</Link></button>
               </div>
               <div className='heroImage'>
                 <img src={process.env.PUBLIC_URL + '/assets/hero-image.png'} alt='illustration' />
