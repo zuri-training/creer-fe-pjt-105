@@ -20,33 +20,33 @@ function App() {
 
   //   const answer = document.getElementById('1');
   //   const answerId = answer.getAttribute('id');
-    
+
   //   // const answer = document.querySelectorAll('.faqsAnswer');
 
   //   (buttonId === answerId) ? answer.classList.toggle('active') : console.log('not the same');
-    
+
   // }
 
   return (
     <div className="App">
-        {/* When you are building a component/feature/page add it to here to see your changes in realtime when you do npm start*/}
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <LandingPage />
-            </Route>
-            <Route exact path="/homepage">
-              <Homepage />
-            </Route>
-            <Route exact path="/signin">
-              <SignIn />
-            </Route>
-            <Route exact path="/signup">
-              <SignUp />
-            </Route>
-          </Switch>
-        </Router>
-        
+      {/* When you are building a component/feature/page add it to here to see your changes in realtime when you do npm start*/}
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <LandingPage />
+          </Route>
+          <Route exact path="/homepage">
+            <Homepage />
+          </Route>
+          <Route exact path="/signin">
+            <SignIn />
+          </Route>
+          <Route exact path="/signup">
+            <SignUp />
+          </Route>
+        </Switch>
+      </Router>
+
     </div>
   );
 }
