@@ -1,6 +1,6 @@
 import './SignUp.css';
 import { FcGoogle } from 'react-icons/fc';
-
+import { Link } from "react-router-dom";
 
  function SignUp() {
   return (
@@ -16,7 +16,7 @@ import { FcGoogle } from 'react-icons/fc';
         </p>
         <div id="marginWork" className="Google">
             <FcGoogle />
-            <a id="Google" href="#" >Sign up with Google</a>
+            <a id="Google" href="https://imiebogodson.vercel.app/" >Sign up with Google</a>
         </div>
         <div class="separator">or</div>
         <div className="form">
@@ -44,7 +44,7 @@ import { FcGoogle } from 'react-icons/fc';
             <button id="marginWork" onClick="document.location='#'">Register</button>
             <p className="paragraph" id="marginWork">
                 Already have an account?
-                <a href="https://www.google.com/">Login</a>
+                <Link to="/signin">Login</Link>
             </p>
     </div>
   );

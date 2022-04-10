@@ -15,7 +15,7 @@ const SignIn = () => {
             <p className='welcomeText'>Welcome back! It's nice to have you back</p>
             <button className="googleSignInBtn">
               <FcGoogle className='googleIcon' />
-              <a href='#' className='link'>Continue with Google</a>
+              <a href='https://imiebogodson.vercel.app/' className='link'>Continue with Google</a>
             </button>
             <div className="loginBreak">
               <span className="breakText">or</span>
@@ -43,15 +43,15 @@ const SignIn = () => {
                 <label for='remember' className='rememberCheckBox'>
                   <span className='rememberText'>Remember me</span></label></div>
               <div className="resetPassword">
-                <a href="" className='link'>Reset Password?</a>
+                <a href="https://imiebogodson.vercel.app/" className='link'>Reset Password?</a>
               </div>
             </div>
-            <button className="signInBtn"><Link to='/homepage' style={{color:'#fff'}}>Login</Link></button>
+            <button className="signInBtn"><Link to='/home' style={{color:'#fff'}}>Login</Link></button>
             <p className='altOption'>
               Don't have an account?{" "}
-              <a className="link" href="">
+              <Link className="link" to="/signup">
                 Register
-              </a>
+              </Link>
             </p>
           </form>
         </div>

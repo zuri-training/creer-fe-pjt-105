@@ -8,27 +8,27 @@ const Footer = () => {
                     <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
                 </div>
                 <div className='SocialLinks'>
-                    <a href='#'>Twitter</a>
-                    <a href='#'>LinkedIn</a>
-                    <a href='#'>Instagram</a>
+                    <a href='https://imiebogodson.vercel.app/'>Twitter</a>
+                    <a href='https://imiebogodson.vercel.app/'>LinkedIn</a>
+                    <a href='https://imiebogodson.vercel.app/'>Instagram</a>
                 </div>
             </div>
             <div className='footerLinks'>
                 <div className='company'>
                     <h4>Company</h4>
-                    <a href='#'>About Us</a>
-                    <a href='#'>Team</a>
-                    <a href='#'>Blog</a>
+                    <a href='https://imiebogodson.vercel.app/'>About Us</a>
+                    <a href='https://imiebogodson.vercel.app/'>Team</a>
+                    <a href='https://imiebogodson.vercel.app/'>Blog</a>
                 </div>
                 <div className='legal'>
                     <h4>Legal</h4>
-                    <a href='#'>Terms and Conditions</a>
-                    <a href='#'>Privacy Policy</a>
+                    <a href='https://imiebogodson.vercel.app/'>Terms and Conditions</a>
+                    <a href='https://imiebogodson.vercel.app/'>Privacy Policy</a>
                 </div>
                 <div className='getHelp'>
                     <h4>Get Help</h4>
-                    <a href='#'>Support</a>
-                    <a href='#'>FAQs</a>
+                    <a href='https://imiebogodson.vercel.app/'>Support</a>
+                    <a href='https://imiebogodson.vercel.app/'>FAQs</a>
                 </div>
             </div>
         </div>

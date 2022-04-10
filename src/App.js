@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css'
 import LandingPage from './pages/LandingPage/LandingPage';
 import Homepage from './pages/Homepage/Homepage';
@@ -8,7 +8,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 function App() {
@@ -32,10 +32,10 @@ function App() {
         {/* When you are building a component/feature/page add it to here to see your changes in realtime when you do npm start*/}
         <Router>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/creer-fe-pjt-105">
               <LandingPage />
             </Route>
-            <Route exact path="/homepage">
+            <Route exact path="/home">
               <Homepage />
             </Route>
             <Route exact path="/signin">

@@ -66,8 +66,3 @@ const Header = ({homePage}) => {
 }
 
 export default Header;
-
-
-{/* <div className='header'>
-                
-        </div> */}

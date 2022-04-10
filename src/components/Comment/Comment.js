@@ -25,7 +25,7 @@ const Comment = ({ comment }) => {
         <div className='comment'>
            <div className='commentHeader'>
                 <div className='commentHeaderLeftSide'>
-                    <img src={process.env.PUBLIC_URL + Users.filter(u => u.id === comment.userId)[0].profilePicture} className='userprofileImage'/>
+                    <img alt="user" src={process.env.PUBLIC_URL + Users.filter(u => u.id === comment.userId)[0].profilePicture} className='userprofileImage'/>
                     <div className='commentInfo'>
                         <p className='userName'>{Users.filter(u => u.id === comment.userId)[0].username}</p>
                         <p className='userTitle'>{Users.filter(u => u.id === comment.userId)[0].jobRole}</p>

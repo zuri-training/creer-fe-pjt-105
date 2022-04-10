@@ -1,6 +1,6 @@
 import './Comments.css';
 import Comment from '../Comment/Comment';
-import { posts } from '../../dummyData';
+// import { posts } from '../../dummyData';
 
 const Comments = ({ comments }) => {
     return (
