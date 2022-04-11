@@ -34,7 +34,7 @@ const Post = ({ post, comments, onPostCommentsToggle }) => {
         <div className='post'>
             <div className='postHeader'>
                 <div className='postHeaderLeftSide'>
-                    <img src={process.env.PUBLIC_URL + Users.filter(u => u.id === post.userId)[0].profilePicture} className='userprofileImage'/>
+                    <img alt="profile caption" src={process.env.PUBLIC_URL + Users.filter(u => u.id === post.userId)[0].profilePicture} className='userprofileImage'/>
                     <div className='postInfo'>
                         <p className='userName'>{Users.filter(u => u.id === post.userId)[0].username}</p>
                         <p className='userTitle'>{Users.filter(u => u.id === post.userId)[0].jobRole},<span className='postTimeStamp'> {post.timeStamp}</span></p>
