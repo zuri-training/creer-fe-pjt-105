@@ -32,7 +32,7 @@ function App() {
         {/* When you are building a component/feature/page add it to here to see your changes in realtime when you do npm start*/}
         <Router>
           <Switch>
-            <Route exact path="/creer-fe-pjt-105">
+            <Route exact path="/">
               <LandingPage />
             </Route>
             <Route exact path="/home">

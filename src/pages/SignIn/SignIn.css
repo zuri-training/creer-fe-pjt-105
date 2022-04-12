@@ -2,19 +2,24 @@
   max-width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  /* background-color: #ae9ef4; */
+  background: rgba(55, 87, 255, 0.05);
 }
 
 .loginForm {
-  width: 35%;
-  height: 100%;
-  padding: 0 60px 60px 60px;
+  width: 30%;
+  height: fit-content;
+  padding: 0 10px 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  border-right: 1px solid rgba(0, 0, 0, 0.309);
+  border: 1px solid rgba(0, 0, 0, 0.139);
+  border-radius: 6px;
 }
 
 .welcomeTextContainer {
@@ -22,7 +27,7 @@
   width: 100%;
   padding: 10px 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .welcomeTextBig {
@@ -31,15 +36,9 @@
   color: #4b4b5a;
 }
 
-/* .welcomeTextSmall {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: rgb(146, 146, 146);
-} */
-
 .googleSignInBtn {
-  margin: 20px 0;
-  width: 65%;
+  /* margin: 10px 0; */
+  width: 60%;
   /* padding: 2px 0; */
   display: flex;
   justify-content: center;
@@ -62,12 +61,13 @@
 }
 
 .googleSignInBtn:hover {
-  background-color: #eee;
+  background-color: rgba(55, 87, 255, 0.05);
   color: #eee;
+  border: 1px solid #d1d1d1;
 }
 
 .loginOrText {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 1.09375rem;
   font-weight: 600;
   color: #4b4b5a;
@@ -80,13 +80,15 @@
 }
 
 .loginText {
+  margin: 0;
   font-size: 0.9rem;
   font-weight: 400;
   color: #6c757d;
 }
 
 form {
-  width: 60%;
+  width: 80%;
+  /* padding: 10px; */
 }
 
 .formLabel {
@@ -95,16 +97,23 @@ form {
   color: #495057;
 }
 
+.rememberMeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .rememberMeLabel {
-  margin: 5px 0;
-  font-size: 0.9rem;
+  margin-left: 5px;
+  font-size: 0.86rem;
   font-weight: 500;
   color: #495057;
 }
 
-.container {
+form .container {
   width: 100%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -130,8 +139,8 @@ form {
 
 .formIcons {
   /* font-size: 1rem; */
-  width: 7%;
-  height: 34px;
+  width: 8%;
+  height: 30px;
   padding: 11px;
   color: #495057;
   border: 1px solid #eee;
@@ -141,8 +150,8 @@ form {
 }
 
 .formBoxInput {
-  width: 95%;
-  height: 32px;
+  width: 92%;
+  height: 28px;
   padding: 10px;
   border: 1px solid #eee;
   border-top-right-radius: 5px;
@@ -152,9 +161,10 @@ form {
 .formBoxInput:focus-within {
   outline: none;
   border: 1px solid #d1d1d1;
+  background-color: rgba(55, 87, 255, 0.05);
 }
 
-.loginBtn {
+.login .loginBtn {
   margin: 20px 0;
   width: 100%;
   /* height: 30px; */
@@ -164,24 +174,32 @@ form {
   font-size: 0.9rem;
   font-weight: 500;
   color: #fff;
-  background-color: #927bf9;
+  background-color: #516df8;
   cursor: pointer;
   transition: .2s;
 }
 
 .loginBtn:hover {
-  background-color: #8166f9;
+  background-color: #3757FF;
+}
+
+.bottomInfoTextContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottomInfoText {
-  margin-right: 5px;
+  /* margin-right: 5px; */
+  margin: 0;
   font-size: 0.9rem;
   font-weight: 400;
   color: #6c757d;
 }
 
 
-.loginImageContainer{
+/* .loginImageContainer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,4 +211,4 @@ form {
 .loginImage {
   width: 45%;
   object-fit: cover;
-}
+} */

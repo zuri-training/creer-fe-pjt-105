@@ -107,9 +107,20 @@ const Login = () => {
                             <input className='formBoxInput' type="password" placeholder="Enter your password" name="psw" required/>
                         </div>
                         
-                        <label className='rememberMeLabel'>
-                        <input type="checkbox" checked="checked" name="remember"/> Remember me
-                        </label>
+                        <div className="rememberMeWrapper">
+                            <input type="checkbox" name="remember"/> 
+                            <label className='rememberMeLabel'>
+                            Remember me
+                            </label>
+                        </div>
+                        
+
+                        {/* <div className="rememberInfo">
+                         <input type='checkbox' name='remember' id='remember' />
+                        <label for='remember' className='rememberCheckBox'>
+                               <span className='rememberText'>Remember me</span>
+                            </label>
+                        </div> */}
                             
                         {/* <button className='loginBtn' type="submit">Log In</button> */}
                         <Link className='loginBtn' to='home'>Log In</Link>
@@ -117,13 +128,13 @@ const Login = () => {
                     </div>
                 </form>
                 <div className='bottomInfoTextContainer'>
-                    <p className='bottomInfoText'>Don't have an account? <Link className="linkText" style={{textDecoration: 'none', fontWeight: '600', color: '#8166f9'}} to={'/signup'}>Register</Link></p>
+                    <p className='bottomInfoText'>Don't have an account? <Link className="linkText" style={{textDecoration: 'none', fontWeight: '600', color: '#3757FF'}} to={'/signup'}>Register</Link></p>
                     
                 </div>
             </div>
-            <div className='loginImageContainer'>
+            {/* <div className='loginImageContainer'>
                 <img className='loginImage' src={process.env.PUBLIC_URL + '/assets/loginImage.png'} alt='notes img'/>
-            </div>
+            </div> */}
         </div>
     )
 }
