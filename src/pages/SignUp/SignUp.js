@@ -1,52 +1,64 @@
 import './SignUp.css';
-import { FcGoogle } from 'react-icons/fc';
+import { FcGoogle } from "react-icons/fc";
+import { HiOutlineMail } from "react-icons/hi";
+import { CgLock } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
  function SignUp() {
   return (
-    <div className="signUp">
-     <h6 id="marginWork">
-            MyIssues
-        </h6>
-        <h2 id="marginWork">
-            Get Started
-        </h2>
-        <p id="marginWork">
-            Let's get you all set up, so you can verify your personal account and begin setting up your account.
-        </p>
-        <div id="marginWork" className="Google">
-            <FcGoogle />
-            <a id="Google" href="https://imiebogodson.vercel.app/" >Sign up with Google</a>
-        </div>
-        <div class="separator">or</div>
-        <div className="form">
-            <div className="input1">
-            <input className="input" placeholder="Firstname" ></input>
-            <input id="input" type="number" className="input" placeholder="Phone Number" ></input>
-            <input className="input" type="password" placeholder="Password" ></input>
+    <div className='signup'>
+        <div className='signupForm'>
+            <div className='welcomeTextContainer shortTextContainer'>
+                {/* <p className='welcomeTextBig'>Welcome back!</p> */}
+                <p className='welcomeTextSmall'>Welcome to .Notes, your minimalist notes app.</p>
             </div>
-            <div className="input2">
-            <input id="input" className="input" placeholder="Lastname" ></input>
-            <input className="input" type="email" placeholder="Email" ></input>
-            <input id="input" className="input" type="password" placeholder="Confirm Password" ></input>
+            <div className='googleSignInBtn'>
+                <p>Continue with Google</p>
+                <FcGoogle  className='googleLogo'/>
             </div>
-            
-        </div>
-        <div id="marginWork">
-        <input
-          type="checkbox"
-          value="ckeckBox"
-          id="checkBox"
-          defaultChecked={false}/>
-            <label for="ckeckid">I agree to the terms of service and privacy policy.</label>
-        </div>
+            <div className='loginOrDecoWrapper'>
+                <hr/>
+                    <p className="loginOrText">OR</p>
+                <hr/>
+            </div>
+            <form>
+                <div class="container">
+                    <label className='formItem formLabel' for="name">Name *</label>
+                    <div className='formNameBoxContainer'>
+                        <div className='formItem formBox signupFormBox firstNameInputContainer'>
+                            <input className='formBoxInput firstNameFormBoxInput formNameBoxInput' type="text" placeholder="First Name" name="name" required/>
+                        </div>
 
-            <button id="marginWork" onClick="document.location='#'">Register</button>
-            <p className="paragraph" id="marginWork">
-                Already have an account?
-                <Link to="/signin">Login</Link>
-            </p>
+                        <div className='formItem formBox signupFormBox lastNameInputContainer'>
+                            <input className='formBoxInput formNameBoxInput' type="text" placeholder="Last Name" name="name" required/>
+                        </div>
+                    </div>
+                    
+
+                    <label className='formItem formLabel' for="email">Email *</label>
+                    <div className='formItem formBox'>
+                        <HiOutlineMail className='formIcons'/>
+                        <input className='formBoxInput' type="text" placeholder="Enter your Email Address" name="email" required/>
+                    </div>
+
+                    <label className='formItem formLabel' for="psw">Password *</label>
+                    <div className='formItem formBox passwordInputContainer'>
+                        <CgLock className='formIcons'/>
+                        <input className='formBoxInput' type="password" placeholder="Enter your password" name="psw" required/>
+                    </div>
+                        
+                    {/* <button className='signupBtn' type="submit">Get Started</button> */}
+                    <Link className='signupBtn' to='home' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Get Started</Link>
+                    
+                </div>
+            </form>
+            <div className='bottomInfoTextContainer'>
+                <p className='bottomInfoText'>Already have an account? <Link to={'/signin'} style={{textDecoration: 'none', fontWeight: '600', color: '#3757FF'}}>Log In</Link></p>
+            </div>
+        </div>
     </div>
   );
 }
+
+
 export default SignUp;

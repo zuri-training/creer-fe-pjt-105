@@ -1,165 +1,135 @@
-  
-  /* Added the class .signUp to make it specific to the signup page */
-  .signUp h6{
-    color: red;
-  }
-  /* Added the class .signUp to make it specific to the signup page */
-  .signUp p{
-    font-size: 11px;
-  }
-  
-  .Google{
-    height: 30px;
-    width: 91%;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    border-bottom: 1px solid rgb(192, 188, 188);
-    border-top: 1px solid rgb(243, 236, 236);
-    border-left: 1px solid rgb(207, 202, 202);
-    border-right: 1px solid rgb(207, 202, 202);
-    padding-bottom: 5px;
-  }
-  .Google,a{
-    text-align: center;
-    text-decoration: none;
-  }
-  #Google{
-    text-decoration: none;
-    color: black;
-  }
-  /* Added the class .signUp to make it specific to the signup page */
-  .signUp img{
-    width: 25px;
-    height: 25px;
-    position: relative;
-    top: 5px;
-    left: -10px;
-  }
-  .separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-  }
-  
-  .separator::before,
-  .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid rgb(201, 193, 193);
-  }
-  
-  .separator:not(:empty)::before {
-    margin-right: 15px;
-  }
-  
-  .separator:not(:empty)::after {
-    margin-left: 15px;
-  }
+.signup {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgba(55, 87, 255, 0.05);
+}
 
-  /* by using the body tag, you are affecting all other parts of the project */
-  /* body{
-    margin-left: 10%;
-    margin-right: 10%;
-  } */ 
-  /* Added the class .signUp to make it specific to the signup page */
-  .signup .input{
-    height: 30px;
-    width: 80%;
-    margin-bottom: 30px;
-    padding: 5px;
-    border-radius: 5px;
-    border-bottom: 1px solid rgb(192, 188, 188);
-    border-top: 1px solid rgb(243, 236, 236);
-    border-left: 1px solid rgb(207, 202, 202);
-    border-right: 1px solid rgb(207, 202, 202);
-    padding-left: 20px;
-  }
-  /* Added the class .signUp to make it specific to the signup page */
-  .signup .form{
-    display: flex;
-    text-align: center;
-    margin-left: 10px;
-  
-  }
-  /* Added the class .signUp to make it specific to the signup page */
-  .signup button{
-    background-color: rgb(120, 17, 218);
-    border: none;
-    width: 42%;
-    height: 30px;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: white;
-    padding: 10px;
-    padding-bottom: 25px;
-  }
-  #marginWork{
-    margin-left: 5%;
-  }  
-  @media (min-width: 1338px){
-    .Google{
-        width: 91%;
-    margin-right: 50%;
-    }
-    .separator{
-        width: 80%;
-    }
-    /* Added the class .signUp to make it specific to the signup page */
-    .signup button{
-        width: 42%;
-    }
-    
-  }
-  @media (min-width:1332) {
-    .Google{
-        width: 90%;
-    }
-    /* Added the class .signUp to make it specific to the signup page */
-    .signup button{
-        width: 38%;
-    }
-    
-  }
-  @media (max-width:500px) {
-    /* Added the class .signUp to make it specific to the signup page */
-   .signup .form{
-     display: block;
-   } 
-   /* Added the class .signUp to make it specific to the signup page */
-   .signup .input{
-     width: 91%;
-     padding-left: 10px;
-     margin-bottom: 30px;
-     padding: 5px;
-   }
-   .separator{
-     width: 91%;
-     margin-left: 5%;
-   }
-   .Google{
-     margin-left: -5%;
-   }
-   /* Added the class .signUp to make it specific to the signup page */
-   .signup button{
-     width: 92%;
-     margin-top: 30px;
-     padding: 10px;
-     padding-bottom: 25px;
-     margin-bottom: 10px;
-  
-   }
-   /* Added the class .signUp to make it specific to the signup page */
-   .signup label{
-     font-size: 12px;
-   }
-  .paragraph{
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  }
+.signupForm {
+  width: 30%;
+  height: fit-content;
+  padding: 0 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.139);
+}
+
+.shortTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeTextSmall {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #4b4b5a;
+}
+
+
+.googleSignInBtn {
+  margin-bottom: 20px;
+  width: 80%;
+  /* padding: 2px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.googleSignInBtn p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 35px;
+  color: #495057;
+}
+
+.googleLogo {
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+.googleSignInBtn:hover {
+  background-color: rgba(55, 87, 255, 0.05);
+  color: #eee;
+  border: 1px solid #d1d1d1;
+}
+
+.loginOrDecoWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginOrDecoWrapper hr {
+  width: 45%;
+  /* border: 0.4px solid #495057; */
+}
+
+.loginOrText {
+  margin-bottom: 20px;
+  font-size: 1.09375rem;
+  font-weight: 600;
+  color: #4b4b5a;
+}
+
+
+.formNameBoxContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signupFormBox {
+  width: 48%;
+}
+
+.formNameBoxInput {
+  width: 100%;
+}
+
+.firstNameFormBoxInput {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.signup .signupBtn {
+  margin: 15px 0;
+  width: 100%;
+  /* height: 30px; */
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #516df8;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.signupBtn:hover {
+  background-color: #3757FF;
+}
+
+
+.bottomInfoText {
+  color: #6c757d;
+}
