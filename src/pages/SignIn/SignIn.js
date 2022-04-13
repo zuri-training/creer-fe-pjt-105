@@ -89,10 +89,15 @@ const Login = () => {
                     <p>Sign in with Google</p>
                     <FcGoogle  className='googleLogo'/>
                 </div>
-                <p className="loginOrText">Or</p>
-                <div className='loginTextContainer'>
-                    <p className='loginText'>Login with email or phone number</p>
+                <div className="loginOrDecoWrapper">
+                    <hr/>
+                    <p className="loginOrText">OR</p>
+                    <hr/>
                 </div>
+                
+                {/* <div className='loginTextContainer'>
+                    <p className='loginText'>Login with email or phone number</p>
+                </div> */}
                 <form>
                     <div class="container">
                         <label className='formItem formLabel' for="uname">Email</label>
