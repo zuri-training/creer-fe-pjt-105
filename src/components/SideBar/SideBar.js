@@ -21,9 +21,9 @@ const SideBar = () => {
     return (
         <div className='sideBar'>
             <ul className='mainSideBarOptions'>
-                <li className='home'><AiOutlineHome size='1.5em'/><p>Home</p></li>
-                <li className='savedPosts'><FaRegBookmark size='1.5em'/><p>Saved posts</p></li>
-                <li className='yourTopics' onClick={yourTopicListToggle}><FiHash size='1.5em'/><p>Topics</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
+                <li className='home'><AiOutlineHome  className='sidebarIcons'/><p>Home</p></li>
+                <li className='savedPosts'><FaRegBookmark className='sidebarIcons' /><p>Saved posts</p></li>
+                <li className='yourTopics' onClick={yourTopicListToggle}><FiHash className='sidebarIcons' /><p>Topics</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
                     <ul className='yourTopicsList noDisplay' id='yourTopicsList'>
                         <li>
                             <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage1.png'} className='sideBarTopicsImage'/>
@@ -42,7 +42,7 @@ const SideBar = () => {
                             <p>Starting Out In Tech</p>
                         </li> 
                     </ul>
-                <li className='yourCommunities' onClick={yourCommunityListToggle}><BsPeople size='1.5em'/><p>My Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
+                <li className='yourCommunities' onClick={yourCommunityListToggle}><BsPeople className='sidebarIcons'/><p>My Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
                     <ul className='yourCommunityList noDisplay' id='yourCommunityList'>
                         <li>
                             <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage1.png'} className='sideBarCommunityImage'/>
