@@ -1,36 +1,48 @@
 .sideBar {
-    flex: 2.2;
+    margin-top: 30px;
+    flex: 1.7;
     /* min-height: calc(100vh - 70px); */
     height: fit-content;
-    padding-top: 30px;
-    background-color: #fff;
+    /* padding: 10px 0; */
+    /* background-color: #fff; */
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.734);
+    border: 1px solid #ccc;
+}
+
+.sidebarIcons {
+    size: 1.05rem;
 }
 
 .sideBar p {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 0.85rem;
 }
 
 
 .sideBar ul {
+    margin: 0;
     padding: 0;
     list-style: none;
+    border-radius: 6px;
 }
 
 .sideBar ul li {
-    padding: 15px 20px;
+    padding: 5px 10px;
     cursor: pointer;
+    /* border-radius: 5px; */
+    border-bottom: 0.5px solid #ccc;
     transition: ease-in-out 0.3s all;
 }
 
 .sideBar ul li:hover {
-    color: #3757FF;
-    background-color: rgba(55, 87, 255, 0.05);
+    /* color: #3757FF; */
+    background-color: rgba(55, 88, 255, 0.096);
 }
 
 .sideBar ul li p {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .mainSideBarOptions li {
@@ -39,7 +51,7 @@
 }
 
 .dropdownIcon {
-    padding-left: 5px;
+    margin-left: auto;
 }
 
 .yourCommunityList,
@@ -54,13 +66,14 @@
 
 .yourTopicsList li p,
 .yourCommunityList li p {
-    font-size: 12px;
+    font-size: 0.65rem;
+    line-height: 15px;
 }
 
 .sideBarCommunityImage,
 .sideBarTopicsImage {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
     object-fit: cover;
 }
