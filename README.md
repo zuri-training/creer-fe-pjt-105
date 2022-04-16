@@ -40,7 +40,7 @@ This project is centered on enabling people within the tech ecosystem to share/g
 ### Project Links
 
 - Project Documentation - https://docs.google.com/document/d/1lgoH_PtHqetFhnvqx-dK8v78pIeqiglOnmbXwsw72Eg/edit
-- Design Link - https://www.figma.com/file/SR7xS1DbOfIOwpqa1MpDHv/?node-id=0%3A1
+<!-- - Design Link - https://www.figma.com/file/SR7xS1DbOfIOwpqa1MpDHv/?node-id=0%3A1 -->
 - Frontend Github Repo - https://github.com/zuri-training/creer-fe-pjt-105
 - Backend Github Repo - https://github.com/zuri-training/MyIssue-be-pjt-105
 
