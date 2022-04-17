@@ -4,6 +4,7 @@ import { FaRegBookmark  } from 'react-icons/fa';
 import { FiHash  } from 'react-icons/fi';
 import { BsPeople  } from 'react-icons/bs';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import CreateASpace from '../CreateASpace/createASpace';
 
 
 const SideBar = () => {
@@ -20,6 +21,7 @@ const SideBar = () => {
 
     return (
         <div className='sideBar'>
+            <CreateASpace />
             <ul className='mainSideBarOptions'>
                 <li className='home'><AiOutlineHome  className='sidebarIcons'/><p>Home</p></li>
                 <li className='savedPosts'><FaRegBookmark className='sidebarIcons' /><p>Saved posts</p></li>
