@@ -5,6 +5,10 @@
     height: fit-content;
     /* padding: 10px 0; */
     /* background-color: #fff; */
+    
+}
+
+.mainSideBarOptions {
     border-radius: 6px;
     color: rgba(0, 0, 0, 0.734);
     border: 1px solid #ccc;
