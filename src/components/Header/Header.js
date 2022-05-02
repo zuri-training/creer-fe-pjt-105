@@ -24,9 +24,11 @@ const Header = ({homePage}) => {
                         <VscBell className='notificationIcon' size='1.7em'/>
                         <span>1</span>
                     </div>
+                    <Link to='/profile'>
                     <div className='profileImage'>
                         <img src={process.env.PUBLIC_URL + '/assets/profileImage.png'} alt='' />
                     </div>
+                    </Link>
                 </div>  
             </>
 

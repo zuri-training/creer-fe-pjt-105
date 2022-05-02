@@ -2,6 +2,7 @@
 import './App.css'
 import LandingPage from './pages/LandingPage/LandingPage';
 import Homepage from './pages/Homepage/Homepage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 import SignIn from './pages/SignIn/SignIn';
 import SignUp from './pages/SignUp/SignUp';
 import {
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route exact path="/home">
               <Homepage />
+            </Route>
+            <Route exact path="/profile">
+              <ProfilePage />
             </Route>
             <Route exact path="/signin">
               <SignIn />
