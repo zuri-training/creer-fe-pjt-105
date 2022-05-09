@@ -46,8 +46,8 @@ const Header = ({homePage}) => {
                     <ul>
                         <li>Contact us</li>
                         <li>Learn more</li>
-                        <li className='headerBtn loginBtn'><Link to='/signin' style={{color:'#000'}}>Login</Link></li>
-                        <li className='headerBtn signUpBtn'><Link to='/signup' style={{color:'#fff'}}>Get Started</Link></li>
+                        <li className='headerBtn loginBtn'><Link to='/signin' style={{textAlign: 'center', textDecoration: 'none', color:'#000'}}>Login</Link></li>
+                        <li className='headerBtn signUpBtn'><Link to='/signup' style={{textAlign: 'center', textDecoration: 'none', color:'#fff'}}>Get Started</Link></li>
                     </ul>
                 </div>
             </>
