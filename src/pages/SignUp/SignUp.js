@@ -48,7 +48,7 @@ import { Link } from "react-router-dom";
                     </div>
                         
                     {/* <button className='signupBtn' type="submit">Get Started</button> */}
-                    <Link className='signupBtn' to='home' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Get Started</Link>
+                    <Link className='signupBtn' to='profile' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Get Started</Link>
                     
                 </div>
             </form>
