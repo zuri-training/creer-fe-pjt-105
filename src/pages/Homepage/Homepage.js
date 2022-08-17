@@ -9,13 +9,19 @@ const Homepage = () => {
     return (
         <div className='homepage'>
             {/* Header */}
-            <Header homePage/>
+            {/* <Header homePage/> */}
 
             {/* Main Section */}
             <main>
-                <SideBar />
-                <Feed />
-                <RightBar />
+                <div className='leftViewContainer viewsOverflowStyle'>
+                    <SideBar />
+                </div>
+                <div className='feedViewContainer viewsOverflowStyle'>
+                    <Feed />
+                </div>
+                <div className='rightViewContainer viewsOverflowStyle'>
+                    <RightBar />
+                </div>
             </main>
 
         </div>
