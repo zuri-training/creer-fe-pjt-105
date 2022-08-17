@@ -128,7 +128,7 @@ const Login = () => {
                         </div> */}
                             
                         {/* <button className='loginBtn' type="submit">Log In</button> */}
-                        <Link className='loginBtn' to='home' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Log In</Link>
+                        <Link className='loginBtn' to='/home' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Log In</Link>
                         
                     </div>
                 </form>

@@ -13,7 +13,7 @@ main {
     position: relative;
     margin-top: auto;
     width: 100%;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     height: calc(100vh - 70px);
     display: flex;
     overflow-y: hidden;
