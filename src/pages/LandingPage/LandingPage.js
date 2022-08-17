@@ -11,7 +11,7 @@ const LandingPage = () => {
         <div className='landingPage'>
           <div className='container'>
             {/* Header */}
-            <Header />
+            {/* <Header /> */}
 
             {/* Hero */}
             <section className='hero'>

@@ -1,15 +1,34 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 import RoutingComponent from './containers/routingComponent';
 import Header from './components/Header/Header';
 
 function App() {
 
+  const [isAuth, setIsAuth] = useState(false);
+  const [formPage, setFormPage] = useState(false)
+
+  const headerController = () => {
+    if(formPage) {
+      setFormPage(true)
+    } else {
+      setFormPage(false)
+    }
+  }
+
   return (
     <div className="App">
-        {/* <Header /> */}
-        {/* When you are building a component/feature/page add it to here to see your changes in realtime when you do npm start*/}
-        <RoutingComponent />
+        <>
+          {
+            (!formPage) ?
+            (
+              <Header isAuth={isAuth}/>
+            )
+            :
+            ('')
+          }
+        </>
+        <RoutingComponent isFormPage={headerController} />
     </div>
   );
 }

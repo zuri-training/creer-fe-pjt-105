@@ -1,32 +1,51 @@
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    width: 100vw;
+    min-height: fit-content;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #dee0e1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.04);
+}
+
+.headerContentWrapper {
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 15px 10px;
+    
+    padding: 8px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(255, 255, 255);
 }
 
-.header .logo {
-    padding-left: 20px;
+.externalPageWidth {
+    max-width: 1200px;
 }
+
+.inappWidth {
+    max-width: 1000px;
+}
+
+/* .headerContentWrapper .logo {
+    padding-left: 20px;
+} */
 
 .logo img {
     cursor: pointer;
 }
 
 .nav-items {
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: flex-end;
 }
 
-.header ul {
+.headerContentWrapper ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -34,17 +53,17 @@
     list-style: none;
 }
 
-.header ul li {
+.headerContentWrapper ul li {
     padding: 0 10px;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
-.header ul li:hover {
+.headerContentWrapper ul li:hover {
     color: #3757FF;
 }
 
-.header .headerBtn {
+.headerContentWrapper .headerBtn {
     padding: 10px 35px;
     border-radius: 5px;
     border: none;
@@ -53,12 +72,12 @@
     transition: ease-in-out 0.3s all;
 }
 
-.header .loginBtn {
+.headerContentWrapper .loginBtn {
     color: #000;
     background-color: #EFEEEE;
 }
 
-.header .loginBtn:hover {
+.headerContentWrapper .loginBtn:hover {
     color: #000;
 }
 
@@ -67,7 +86,7 @@
     background-color: #3757FF;
 }
 
-.header .signUpBtn:hover {
+.headerContentWrapper .signUpBtn:hover {
     color: #fff;
 }
 

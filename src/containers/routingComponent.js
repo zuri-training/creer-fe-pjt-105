@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Routes,
     Route,
-    // Link
   } from "react-router-dom";
 import LandingPage from '../pages/LandingPage/LandingPage';
 import Homepage from '../pages/Homepage/Homepage';

@@ -8,7 +8,7 @@ const ProfilePage = () => {
         <div className='profilePage'>
             <div className='profilePageContainer'>
                 {/* Header */}
-                <Header homePage/>
+                {/* <Header homePage/> */}
 
 
                 {/* Profile Page Body */}
