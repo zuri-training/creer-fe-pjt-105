@@ -28,7 +28,7 @@ function App() {
             ('')
           }
         </>
-        <RoutingComponent setAuth={onAuth}/>
+        <RoutingComponent setAuth={onAuth} isUserAuth={isAuth}/>
     </div>
   );
 }
