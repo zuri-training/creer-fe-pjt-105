@@ -8,9 +8,11 @@ const Header = ({ isAuth }) => {
             <div className={`header ${isAuth ? 'borderBottom' : ''}`}>
                 <div className={`headerContentWrapper ${isAuth ? 'inappWidth' : 'externalPageWidth'}`}>
                     <div className='headerLeft'>
-                        <div className='logo'>
-                            <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
-                        </div>
+                        <Link to='/'>
+                            <div className='logo'>
+                                <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
+                            </div>
+                        </Link>
                     </div>
                     {
                         (isAuth) 
