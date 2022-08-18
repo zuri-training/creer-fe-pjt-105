@@ -1,4 +1,5 @@
 .landingPage {
+    margin-top: 90px;
     width: 100%;
     background-color: #fff;
 }
@@ -13,7 +14,6 @@
 /* Hero Section */
 .hero {
     width: 100%;
-    margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }

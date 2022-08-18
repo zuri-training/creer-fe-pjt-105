@@ -1,6 +1,7 @@
 .sideBar {
-    margin-top: 30px;
-    flex: 1.7;
+    /* margin-top: 30px; */
+    /* flex: 1.7; */
+    width: 100%;
     /* min-height: calc(100vh - 70px); */
     height: fit-content;
     /* padding: 10px 0; */

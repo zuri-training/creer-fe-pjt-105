@@ -77,7 +77,7 @@ import { CgLock } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 
-const Login = () => {
+const Login = ({ setAuth }) => {
     return (
         <div className='login'>
             <div className='loginForm'>
@@ -99,14 +99,14 @@ const Login = () => {
                     <p className='loginText'>Login with email or phone number</p>
                 </div> */}
                 <form>
-                    <div class="container">
-                        <label className='formItem formLabel' for="uname">Email</label>
+                    <div className="container">
+                        <label className='formItem formLabel' htmlFor="uname">Email</label>
                         <div className='formItem formBox emailInputContainer'>
                             <HiOutlineMail className='formIcons'/>
                             <input className='formBoxInput' type="text" placeholder="Enter your Email Address" name="uname" required/>
                         </div>
 
-                        <label className='formItem formLabel' for="psw">Password</label>
+                        <label className='formItem formLabel' htmlFor="psw">Password</label>
                         <div className='formItem formBox passwordInputContainer'>
                             <CgLock className='formIcons'/>
                             <input className='formBoxInput' type="password" placeholder="Enter your password" name="psw" required/>
@@ -128,7 +128,7 @@ const Login = () => {
                         </div> */}
                             
                         {/* <button className='loginBtn' type="submit">Log In</button> */}
-                        <Link className='loginBtn' to='home' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Log In</Link>
+                        <Link onClick={() => setAuth()} className='loginBtn' to='/home' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Log In</Link>
                         
                     </div>
                 </form>

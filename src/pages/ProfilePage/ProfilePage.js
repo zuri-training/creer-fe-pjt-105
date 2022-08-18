@@ -1,15 +1,11 @@
 import './ProfilePage.css';
 import { FaTimes } from 'react-icons/fa';
-import Header from '../../components/Header/Header';
 import Posts from '../../components/Posts/Posts';
 
 const ProfilePage = () => {
     return (
         <div className='profilePage'>
             <div className='profilePageContainer'>
-                {/* Header */}
-                <Header homePage/>
-
 
                 {/* Profile Page Body */}
                 <main className='profilePageBody'>
