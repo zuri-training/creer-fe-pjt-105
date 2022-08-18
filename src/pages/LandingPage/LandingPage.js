@@ -1,6 +1,5 @@
 import './LandingPage.css';
 import { GrAdd } from 'react-icons/gr';
-import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 
@@ -10,8 +9,6 @@ const LandingPage = () => {
     return (
         <div className='landingPage'>
           <div className='container'>
-            {/* Header */}
-            {/* <Header /> */}
 
             {/* Hero */}
             <section className='hero'>

@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { CgLock } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
- function SignUp() {
+ function SignUp({ setAuth }) {
   return (
     <div className='signup'>
         <div className='signupForm'>
@@ -22,8 +22,8 @@ import { Link } from "react-router-dom";
                 <hr/>
             </div>
             <form>
-                <div class="container">
-                    <label className='formItem formLabel' for="name">Name *</label>
+                <div className="container">
+                    <label className='formItem formLabel' htmlFor="name">Name *</label>
                     <div className='formNameBoxContainer'>
                         <div className='formItem formBox signupFormBox firstNameInputContainer'>
                             <input className='formBoxInput firstNameFormBoxInput formNameBoxInput' type="text" placeholder="First Name" name="name" required/>
@@ -35,20 +35,20 @@ import { Link } from "react-router-dom";
                     </div>
                     
 
-                    <label className='formItem formLabel' for="email">Email *</label>
+                    <label className='formItem formLabel' htmlFor="email">Email *</label>
                     <div className='formItem formBox'>
                         <HiOutlineMail className='formIcons'/>
                         <input className='formBoxInput' type="text" placeholder="Enter your Email Address" name="email" required/>
                     </div>
 
-                    <label className='formItem formLabel' for="psw">Password *</label>
+                    <label className='formItem formLabel' htmlFor="psw">Password *</label>
                     <div className='formItem formBox passwordInputContainer'>
                         <CgLock className='formIcons'/>
                         <input className='formBoxInput' type="password" placeholder="Enter your password" name="psw" required/>
                     </div>
                         
                     {/* <button className='signupBtn' type="submit">Get Started</button> */}
-                    <Link className='signupBtn' to='/profile' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Get Started</Link>
+                    <Link onClick={() => setAuth()} className='signupBtn' to='/profile' style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>Get Started</Link>
                     
                 </div>
             </form>
