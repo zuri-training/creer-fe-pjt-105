@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
         <div className='signupForm'>
             <div className='welcomeTextContainer shortTextContainer'>
                 {/* <p className='welcomeTextBig'>Welcome back!</p> */}
-                <p className='welcomeTextSmall'>Welcome to .Notes, your minimalist notes app.</p>
+                <p className='welcomeTextSmall'>Welcome to Creer!</p>
             </div>
             <div className='googleSignInBtn'>
                 <p>Continue with Google</p>

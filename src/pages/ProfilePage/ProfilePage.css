@@ -1,11 +1,18 @@
 .profilePage {
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     background-color: #fff;
 }
 
 .profilePageContainer {
-    width: 1100px;
-    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 1000px;
+    height: calc(100vh - 66px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-x: hidden;
     
 }
 
@@ -14,19 +21,13 @@
     padding: 0;
 }
 
-.profilePageBody {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .profilePageBodyLeft {
-    margin-right: 50px;
+    margin-right: 30px;
     flex: 6;
 }
 
 .profilePageBodyRight {
-    margin-left: 50px;
+    margin-left: 30px;
     flex: 2.5;
 }
 
@@ -123,6 +124,9 @@
     padding: 20px;
 }
 
+.profilePageBodyRight {
+    padding: 20px;
+}
 
 .profilePageCredentialsHeader,
 .profilePageCreateACommunityHeader {

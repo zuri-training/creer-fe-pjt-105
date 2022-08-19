@@ -14,11 +14,11 @@ const routingComponent = ({ setAuth, isUserAuth }) => {
     <>
         {/* When you are building a component/feature/page add it to here to see your changes in realtime when you do npm start*/}
         <Routes>
-          <Route path='/' element={(isUserAuth) ? <Homepage /> : <LandingPage />}/>
-          <Route path='/home' element={(isUserAuth) ? <Homepage /> : <SignIn setAuth={setAuth}/>}/>
-          <Route path='/profile' element={<ProfilePage />}/>
-          <Route path='/signin' element={<SignIn setAuth={setAuth}/>}/>
-          <Route path='/signup' element={<SignUp setAuth={setAuth}/>}/>
+          <Route path='/' element={(isUserAuth) ? <Homepage /> : <LandingPage />} />
+          <Route path='/home' element={(isUserAuth) ? <Homepage /> : <SignIn setAuth={setAuth}/>} />
+          <Route path='/profile' element={<ProfilePage />} />
+          <Route path='/signin' element={<SignIn setAuth={setAuth}/>} />
+          <Route path='/signup' element={<SignUp setAuth={setAuth}/>} />
         </Routes>
     </>
   )
