@@ -7,18 +7,22 @@
     justify-content: space-between;
     align-items: center;
 }
-  
+
 #formContainer {
 width: 100%;
-height: fit-content;
 padding: 0 10px 20px 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+height: fit-content;
 background-color: #fff;
 border: 1px solid rgba(0, 0, 0, 0.139);
-/* border-radius: 3px; */
+}
+  
+#formContentBox {
+width: 100%;
+height: fit-content;
+display: flex;
+/* flex-direction: column; */
+justify-content: center;
+align-items: center;
 }
 
 .welcomeTextContainer {
@@ -35,7 +39,8 @@ color: #4b4b5a;
 }
 
 .googleSignInBtn {
-margin-bottom: 15px;
+margin-bottom: 10px;
+margin-top: 10px;
 width: 80%;
 display: flex;
 justify-content: center;
