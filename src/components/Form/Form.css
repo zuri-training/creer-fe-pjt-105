@@ -168,6 +168,17 @@ background-color: rgba(240, 240, 240, 0.393);
 
 .formBoxInput::placeholder {
     font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.formBoxInput::-webkit-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.formBoxInput:-ms-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
 }
 
 .formBtn {
