@@ -5,10 +5,10 @@ import Posts from '../../components/Posts/Posts';
 const ProfilePage = () => {
     return (
         <div className='profilePage'>
-            <div className='profilePageContainer'>
+            {/* <div className='profilePageContainer'> */}
 
                 {/* Profile Page Body */}
-                <main className='profilePageBody'>
+                <main className='profilePageContainer'>
                     <div className='profilePageBodyLeft'>
                         <div className='profilePageBodyTop'>
                             <div className='profileImageAndName'>
@@ -85,7 +85,7 @@ const ProfilePage = () => {
                 </main>
                 
             </div>
-        </div>
+        // </div>
         
     )
 }

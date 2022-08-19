@@ -9,16 +9,16 @@ import ProfilePage from '../pages/ProfilePage/ProfilePage';
 import SignIn from '../pages/SignIn/SignIn';
 import SignUp from '../pages/SignUp/SignUp';
 
-const routingComponent = ({ setAuth }) => {
+const routingComponent = ({ setAuth, isUserAuth }) => {
   return (
     <>
         {/* When you are building a component/feature/page add it to here to see your changes in realtime when you do npm start*/}
         <Routes>
-          <Route path='/' element={<LandingPage />}/>
-          <Route path='/home' element={<Homepage />}/>
-          <Route path='/profile' element={<ProfilePage />}/>
-          <Route path='/signin' element={<SignIn setAuth={setAuth}/>}/>
-          <Route path='/signup' element={<SignUp setAuth={setAuth}/>}/>
+          <Route path='/' element={(isUserAuth) ? <Homepage /> : <LandingPage />} />
+          <Route path='/home' element={(isUserAuth) ? <Homepage /> : <SignIn setAuth={setAuth}/>} />
+          <Route path='/profile' element={<ProfilePage />} />
+          <Route path='/signin' element={<SignIn setAuth={setAuth}/>} />
+          <Route path='/signup' element={<SignUp setAuth={setAuth}/>} />
         </Routes>
     </>
   )
