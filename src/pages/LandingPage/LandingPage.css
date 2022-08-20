@@ -1,11 +1,11 @@
 .landingPage {
-    margin-top: 90px;
+    margin-top: 60px;
     width: 100%;
     background-color: #fff;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -14,6 +14,7 @@
 /* Hero Section */
 .hero {
     width: 100%;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -23,41 +24,41 @@
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 72px;
+    line-height: 52px;
 }
 
 p {
-    font-size: 20px;
-    font-style: normal;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
     letter-spacing: 0.01em;
     text-align: left;
 }
 
 .heroText p {
     width: 85%;
-    margin: 20px 0;
+    margin: 15px 0 40px 0;
 }
 
-.heroText button {
+#heroBtn {
     margin: 20px 0;
-    padding: 15px 45px;
-    font-size: 25px;
-    border-radius: 5px;
+    padding: 15px 55px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 3px;
     border: none;
     outline: none;
     color: #fff;
-    background-color: #3757FF;
+    background-color: #516df8;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
-button:hover {
-    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.323);
+#heroBtn:hover {
+    background-color: #3757FF;
 }
 
 
@@ -88,11 +89,11 @@ button:hover {
 .descriptionByWords {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .descriptionByWords .subSection {
-    width: 32%;
+    width: 30%;
 }
 
 .descriptionByWords .effects {
@@ -181,7 +182,7 @@ h2 {
 /* About Us */
 .aboutUs {
     margin-top: 200px;
-    padding: 100px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +190,7 @@ h2 {
 }
 
 .aboutUsContent {
-    margin: 50px 0 100px 0;
+    margin: 40px 0 70px 0;
     max-width: 800px;
     text-align: center;
 }
@@ -227,43 +228,6 @@ h2 {
 .faqsContentsTitle {
     width: 100%;
     text-align: center;
-}
-
-.faqsQuestion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faqsQuestion p {
-    font-weight: 500;
-}
-
-.faqsAnswer {
-    padding-right: 30px;
-}
-
-.faqsAnswer p {
-    font-size: 18px;
-    color: #000;
-}
-
-.faqsAnswer.closed {
-    opacity: 0;
-    max-height: 0px;
-    height: 100%;
-    visibility: hidden;
-    pointer-events: none;
-    margin-bottom: 0px;
-}
-
-.faqsAnswer.open {
-    opacity: 1;
-    max-height: 160px;
-    height: 100%;
-    visibility: visible;
-    pointer-events: all;
-    margin-bottom: 32px;
 }
 
 /* Contact Us */
