@@ -51,7 +51,7 @@ const Form = ({ setAuth, formType }) => {
                             <input className='formBoxInput' type="password" placeholder="Password" name="psw" required/>
                         </div>
                             
-                        <Link onClick={() => setAuth()} className='formBtn' to={isLogin ? '/home' : '/profile'} style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>{isLogin ? 'Log In' : 'Sign Up'}</Link>
+                        <Link onClick={() => setAuth()} className='formBtn' to={isLogin ? '/' : '/profile'} style={{textAlign: 'center', textDecoration: 'none', fontWeight: '600', color: '#fff'}}>{isLogin ? 'Log In' : 'Sign Up'}</Link>
                         
                     </div>
                 </form>

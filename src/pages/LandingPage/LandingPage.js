@@ -1,5 +1,4 @@
 import './LandingPage.css';
-import { GrAdd } from 'react-icons/gr';
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import Faqs from '../../components/Faqs/Faqs';
