@@ -44,8 +44,8 @@ const Header = ({ isAuth }) => {
                                 <ul>
                                     <li>Contact us</li>
                                     <li>Learn more</li>
-                                    <li className='headerBtn loginBtn'><Link to='/signin' style={{textAlign: 'center', textDecoration: 'none', color:'#000'}}>Login</Link></li>
-                                    <li className='headerBtn signUpBtn'><Link to='/signup' style={{textAlign: 'center', textDecoration: 'none', color:'#fff'}}>Get Started</Link></li>
+                                    <li><Link to='/signin' id='loginBtn' className='headerBtn'>Login</Link></li>
+                                    <li><Link to='/signup' id='signUpBtn' className='headerBtn'>Get Started</Link></li>
                                 </ul>
                             </div>  
                         )

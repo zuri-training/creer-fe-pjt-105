@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Comment.css';
 import { BiLike } from 'react-icons/bi';
 import { RiReplyLine } from 'react-icons/ri';
-import { Users } from '../../dummyData';
+import { Users } from '../../db';
 
 const Comment = ({ comment }) => {
 

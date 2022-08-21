@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 import { FiMessageSquare } from 'react-icons/fi';
 import { BiLike, BiBookmark } from 'react-icons/bi';
 import Comments from '../Comments/Comments';
-import { Users } from '../../dummyData';
+import { Users } from '../../db';
 
 const Post = ({ post, comments, onPostCommentsToggle }) => {
 
