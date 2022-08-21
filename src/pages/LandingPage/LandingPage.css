@@ -182,7 +182,7 @@ h2 {
 /* About Us */
 .aboutUs {
     margin-top: 200px;
-    padding: 40px 0;
+    /* padding: 20px 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +190,7 @@ h2 {
 }
 
 .aboutUsContent {
-    margin: 40px 0 70px 0;
+    margin: 30px 0 70px 0;
     max-width: 800px;
     text-align: center;
 }
@@ -204,11 +204,12 @@ h2 {
 
 .aboutUsContentTitle h1 {
     margin: 20px 0;
-    color: #FB0909;
+    /* color: #FB0909; */
 }
 
 .aboutUsContentParagraph p{
-    margin: 0;
+    margin: 0 auto;
+    width: 65%;
     text-align: center;
 }
 
@@ -238,7 +239,7 @@ h2 {
     justify-content: center;
     align-items: center;
     background: rgba(55, 87, 255, 0.2);
-    border-radius: 8px;
+    border-radius: 3px;
 }
 
 .contactUsContent {
@@ -249,40 +250,71 @@ h2 {
     margin: 10px;
 }
 
+.contactUsContent p {
+    text-align: center;
+    margin: 15px auto;
+    /* width: 30%; */
+}
+
 .contactUsForm {
-    width: 610px;
-    height: 570px;
-    padding: 70px 30px 20px 30px;
+    margin-top: 10px;
+    width: 53%;
+    height: fit-content;
+    padding: 50px 20px;
     display: inline-block;
     background: #FFFFFF;
-    border-radius: 8px;
-    font-size: 20px;
+    border-radius: 3px;
+    font-size: 0.9rem;
     line-height: 30px;
 }
 
 .contactUsForm input[type=text],
-.contactUsForm input[type=email],
-.contactUsForm textarea {
-    margin: 20px 0;
-    width: 70%;
-    padding: 25px;
+.contactUsForm input[type=email] {
+    margin: 10px 0;
+    width: 85%;
+    height: 35px;
+    padding: 0 10px;
     background: #FFFFFF;
-    border: 0.5px solid #9C9797;
+    border: 1px solid #9C9797;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
 }
 
-.contactUsForm input {
-    height: 74px;
-}
 
 .contactUsForm textarea {
-    height: 163px;
+    min-height: 163px;
+    width: 335px !important;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border: 1px solid #9C9797;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.contactUsForm input::placeholder,
+.contactUsForm textarea::placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.contactUsForm input::-webkit-input-placeholder,
+.contactUsForm textarea::-webkit-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.contactUsForm input:-ms-input-placeholder,
+.contactUsForm textarea:-ms-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
 }
 
 .submitBtn {
-    margin: 30px auto;
-    width: 70%;
+    margin: 10px 30px 0 auto;
+    /* width: %; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -291,18 +323,19 @@ h2 {
 
 .submitBtn input[type=submit] {
     padding: 15px 45px;
-    font-size: 20px;
-    border-radius: 8px;
+    font-size: 0.9rem;
+    border-radius: 3px;
     border: none;
     outline: none;
     color: #fff;
-    background-color: #3757FF;
+    background-color: #516df8;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
 input[type=submit]:hover {
-    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.302);
+    /* box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.302); */
+    background-color: #3757FF;
 }
 
 input:focus,
