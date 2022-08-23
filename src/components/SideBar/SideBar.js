@@ -5,12 +5,10 @@ import { FiHash  } from 'react-icons/fi';
 import { BsPeople  } from 'react-icons/bs';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import CreateASpace from '../CreateASpace/createASpace';
-// import { useState } from 'react';
 
 
 const SideBar = () => {
 
-    // const [isClicked, setIsClicked] = useState(false);
 
     const yourCommunityListToggle = () => {
         const community = document.getElementById('yourCommunities');
