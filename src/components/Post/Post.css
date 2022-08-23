@@ -1,8 +1,8 @@
 .post {
     margin-bottom: 15px;
-    padding-top: 20px;
+    padding-top: 15px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 0px;
     border: 1px solid #ccc;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .postHeader {
-    padding: 10px 20px;
+    padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@
     object-fit: cover;
     cursor: pointer;
     /* border: 1px solid #ccc; */
-    border-radius: 50%;
+    border-radius: 6px;
 }
 
 .postInfo p {
@@ -64,18 +64,19 @@
 }
 
 .postBody {
-    padding: 10px 35px;
-    cursor: pointer;
+    padding: 10px 20px;
+    /* cursor: pointer; */
 }
 
 .postBody p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .postBody .postTitleText {
-    margin: 15px 0;
-    font-size: 19px;
+    margin: 5px 0;
+    font-size: 1rem;
     font-weight: 700;
+    /* line-height: 30px; */
     cursor: pointer;
 }
 
@@ -84,8 +85,9 @@
 }
 
 .postBody .postBodyText {
-    font-size: 14px;
+    font-size: 0.75rem;
     font-weight: 400;
+    line-height: 20px;
 }
 
 .postReadMore {

@@ -9,14 +9,19 @@ import CreateASpace from '../CreateASpace/createASpace';
 
 const SideBar = () => {
 
+
     const yourCommunityListToggle = () => {
+        const community = document.getElementById('yourCommunities');
         const communityList = document.getElementById('yourCommunityList');
         communityList.classList.toggle('noDisplay');
+        community.classList.toggle('onDropdown');
     }
 
     const yourTopicListToggle = () => {
+        const topics = document.getElementById('yourTopics');
         const topicsList = document.getElementById('yourTopicsList');
         topicsList.classList.toggle('noDisplay');
+        topics.classList.toggle('onDropdown');
     }
 
     return (
@@ -25,7 +30,7 @@ const SideBar = () => {
             <ul className='mainSideBarOptions'>
                 <li className='home'><AiOutlineHome  className='sidebarIcons'/><p>Home</p></li>
                 <li className='savedPosts'><FaRegBookmark className='sidebarIcons' /><p>Saved posts</p></li>
-                <li className='yourTopics' onClick={yourTopicListToggle}><FiHash className='sidebarIcons' /><p>Topics</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
+                <li id='yourTopics' className='yourTopics' onClick={yourTopicListToggle}><FiHash className='sidebarIcons' /><p>Topics</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
                     <ul className='yourTopicsList noDisplay' id='yourTopicsList'>
                         <li>
                             <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage1.png'} className='sideBarTopicsImage'/>
@@ -44,7 +49,7 @@ const SideBar = () => {
                             <p>Starting Out In Tech</p>
                         </li> 
                     </ul>
-                <li className='yourCommunities' onClick={yourCommunityListToggle}><BsPeople className='sidebarIcons'/><p>My Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
+                <li id='yourCommunities' className='yourCommunities' onClick={yourCommunityListToggle}><BsPeople className='sidebarIcons'/><p>My Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
                     <ul className='yourCommunityList noDisplay' id='yourCommunityList'>
                         <li>
                             <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage1.png'} className='sideBarCommunityImage'/>
