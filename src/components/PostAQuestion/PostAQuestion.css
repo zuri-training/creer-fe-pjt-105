@@ -20,15 +20,16 @@
     align-items: center;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: rgba(227, 226, 226, 0.53);
+    background-color: rgba(252, 253, 253, 0.765);
+    /* background-color: rgba(227, 226, 226, 0.53); */
     border-radius: 3px;
-    border: 1px solid #d1d1d18c;
+    border: 1px solid #ccc;
     transition: .2s;
 }
 
 .postAQuestionBtn:hover {
-    border: 1px solid #cccbcbdb;
-    background-color: rgba(205, 205, 205, 0.493);
+    /* border: 1px solid #cccbcbdb; */
+    background-color: rgba(227, 226, 226, 0.333);
 }
 
 .postAQuestionBtn p {
