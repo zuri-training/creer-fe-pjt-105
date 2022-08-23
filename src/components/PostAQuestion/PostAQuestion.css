@@ -3,37 +3,43 @@
 }
 
 .postAQuestionHeader{
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .postAQuestion .postAQuestionBtn {
     width: 87%;
-    height: 48px;
+    height: 40px;
     padding: 0 20px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #fff;
-    border-radius: 7px;
+    background-color: rgba(227, 226, 226, 0.53);
+    border-radius: 3px;
     border: 1px solid #d1d1d18c;
+    transition: .2s;
 }
 
 .postAQuestionBtn:hover {
     border: 1px solid #cccbcbdb;
+    background-color: rgba(205, 205, 205, 0.493);
 }
 
 .postAQuestionBtn p {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.5);
 }
 
 .postAQuestion .profileImage {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
