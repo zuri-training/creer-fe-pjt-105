@@ -5,9 +5,12 @@ import { FiHash  } from 'react-icons/fi';
 import { BsPeople  } from 'react-icons/bs';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import CreateASpace from '../CreateASpace/createASpace';
+import { useState } from 'react';
 
 
 const SideBar = () => {
+
+    const [isClicked, setIsClicked] = useState(false);
 
     const yourCommunityListToggle = () => {
         const communityList = document.getElementById('yourCommunityList');
@@ -15,8 +18,14 @@ const SideBar = () => {
     }
 
     const yourTopicListToggle = () => {
-        const topicsList = document.getElementById('yourTopicsList');
-        topicsList.classList.toggle('noDisplay');
+        if(!isClicked) {
+            setIsClicked(true)
+        } else {
+            setIsClicked(false)
+        }
+
+        // const topicsList = document.getElementById('yourTopicsList');
+        // topicsList.classList.toggle('noDisplay');
     }
 
     return (
@@ -44,8 +53,8 @@ const SideBar = () => {
                             <p>Starting Out In Tech</p>
                         </li> 
                     </ul>
-                <li className='yourCommunities' onClick={yourCommunityListToggle}><BsPeople className='sidebarIcons'/><p>My Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
-                    <ul className='yourCommunityList noDisplay' id='yourCommunityList'>
+                <li className={`${isClicked ? '' : 'yourCommunities'}`} onClick={yourCommunityListToggle}><BsPeople className='sidebarIcons'/><p>My Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
+                    <ul className={`yourCommunityList ${isClicked ? '' : 'noDisplay'}`} id='yourCommunityList'>
                         <li>
                             <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage1.png'} className='sideBarCommunityImage'/>
                             <p>Frontend Developers</p>
