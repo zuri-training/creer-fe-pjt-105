@@ -1,8 +1,9 @@
 .comment {
     padding: 10px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.207);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.207);
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.207); */
-    background-color: rgba(204, 204, 204, 0.138);
+    /* background-color: rgba(204, 204, 204, 0.138); */
+    background-color: rgba(252, 253, 253, 0.927);
 }
 
 
