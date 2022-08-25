@@ -1,6 +1,12 @@
+import { useState } from 'react';
+import TextEditor from '../TextEditor/TextEditor';
 import './PostAQuestion.css';
 
 const PostAQuestion = () => {
+
+    const [viewState, setViewState] = useState('question');
+
+    console.log(viewState);
 
 
     const openPostAQuestionBody = () => {
@@ -19,13 +25,17 @@ const PostAQuestion = () => {
             </div>
             <div className='postAQuestionBody noDisplay' id='postAQuestionBody'>
                 <div className='postAQuestionBodyTop'>
-                    <p className='postAQuestionBody'><span className='userName'>David Adewole</span> is asking</p>
+                    <ul className='postAQuestionNavBar'>
+                        <li id='AskAQuestionViewButton' className={`${(viewState === 'question') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('question')}>Ask A Question</li>
+                        <li id='makeAPostViewButton' className={`${(viewState === 'post') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('post')}>Make A Post</li>
+                    </ul>
                 </div>
                 <div className='postAQuestionBodyCenter'>
-                    <textarea name='question'  id='question' placeholder='Write something...'></textarea>
+                    {/* <textarea name='question'  id='question' placeholder='Write something...'></textarea> */}
+                    <TextEditor />
                 </div>
                 <div className='postAQuestionBodyBottom'>
-                    <input className='posAQuestionBtn' type='submit' value='Ask Question'/>
+                    <input className='posAQuestionBtn' type='submit' value='Publish Post'/>
                 </div>
             </div>
         </div>
