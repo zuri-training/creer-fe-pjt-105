@@ -30,12 +30,20 @@ const PostAQuestion = () => {
                         <li id='makeAPostViewButton' className={`${(viewState === 'post') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('post')}>Make A Post</li>
                     </ul>
                 </div>
-                <div className='postAQuestionBodyCenter'>
-                    {/* <textarea name='question'  id='question' placeholder='Write something...'></textarea> */}
-                    <TextEditor />
-                </div>
-                <div className='postAQuestionBodyBottom'>
-                    <input className='posAQuestionBtn' type='submit' value='Publish Post'/>
+                <div className={`postAQuestionBodyCenter ${(viewState === 'question') ? 'viewStateStyling' : ''}`}>
+                    {
+                        (viewState === 'question') ?
+                        <>
+                            <div className='postAQuestionInputWrapper'>
+                                <textarea name='question'  id='question' placeholder='Write something...'></textarea>
+                            </div>
+                            <div className='postAQuestionBodyBottom'>
+                                <input className='posAQuestionBtn' type='submit' value='Post Question'/>
+                            </div>
+                        </>
+                        :
+                        <TextEditor />
+                    }
                 </div>
             </div>
         </div>
