@@ -19,6 +19,7 @@ const TextEditor = () => {
             <RichTextEditor 
               value={value} 
               onChange={onChange}
+              placeholder="Say Something..."
               controls={[
                 ['h4', 'bold', 'italic', 'clean'],
                 ['unorderedList', 'orderedList'],

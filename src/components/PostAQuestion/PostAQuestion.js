@@ -35,7 +35,7 @@ const PostAQuestion = () => {
                         (viewState === 'question') ?
                         <>
                             <div className='postAQuestionInputWrapper'>
-                                <textarea name='question'  id='question' placeholder='Write something...'></textarea>
+                                <textarea name='question'  id='question' placeholder='Ask Your Question...'></textarea>
                             </div>
                             <div className='postAQuestionBodyBottom'>
                                 <input className='posAQuestionBtn' type='submit' value='Post Question'/>
