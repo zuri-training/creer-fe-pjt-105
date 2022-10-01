@@ -1,5 +1,5 @@
 .communityPage {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     /* background-color: #000; */
 }
@@ -122,6 +122,7 @@
 
 
 .communityBody {
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -129,6 +130,7 @@
 
 .communityBodyLeft {
     flex: 6;
+    padding: 0 30px 0 0;
 }
 
 .communityBodyRight {

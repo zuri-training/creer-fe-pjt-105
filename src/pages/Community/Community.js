@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import './Community.css';
 import Header from '../../components/Header/Header';
 import Feed from '../../components/Feed/Feed';
 import RightBar from '../../components/RightBar/RightBar';
 
-const communityPage = () => {
+const CommunityPage = () => {
+
+    const [viewState, setViewState] = useState('posts');
+
+
     return (
         <div className='communityPage'>
             {/* Header */}
@@ -35,6 +40,12 @@ const communityPage = () => {
             {/* Community Body */}
             <main className='communityBody'>
                 <div className='communityBodyLeft'>
+                    <div className='postAQuestionBodyTop'>
+                        <ul className='postAQuestionNavBar'>
+                            <li id='AskAQuestionViewButton' className={`${(viewState === 'about') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('about')}>About</li>
+                            <li id='makeAPostViewButton' className={`${(viewState === 'posts') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('posts')}>Posts</li>
+                        </ul>
+                    </div>
                     <Feed /> 
                 </div>
                 <div className='communityBodyRight'>
@@ -46,4 +57,4 @@ const communityPage = () => {
     )
 }
 
-export default communityPage;
+export default CommunityPage;
