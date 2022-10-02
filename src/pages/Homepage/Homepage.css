@@ -9,7 +9,7 @@
     transform: translateZ(0);
 }
 
-main {
+.homepage main {
     position: relative;
     margin-top: auto;
     width: 100%;

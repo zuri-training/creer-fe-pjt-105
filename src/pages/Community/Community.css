@@ -1,10 +1,12 @@
 .communityPage {
-    max-width: 1000px;
+    max-width: 900px;
+    min-height: max-content;
     margin: 0 auto;
+    padding: 15px 0;
     /* background-color: #000; */
 }
 
-.communityPage p {
+.communityHeader  p {
     margin: 0;
     padding: 0;
 }
@@ -122,7 +124,7 @@
 
 
 .communityBody {
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -131,6 +133,52 @@
 .communityBodyLeft {
     flex: 6;
     padding: 0 30px 0 0;
+}
+
+.communityBodyLeftTop {
+    border-bottom: 1px solid #ccc;
+}
+
+.communityBodyLeftNavBar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    border: none;
+    cursor: pointer;
+}
+
+.communityBodyLeftNavBar li {
+    margin: 0;
+    width: 10%;
+    padding: 12px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    
+}
+
+.communityBodyLeftNavBar li.selectStyle {
+    border-bottom: 3px solid #516df8;
+    border-bottom-left-radius: -5px;
+    border-bottom-right-radius: -5px;
+}
+
+.communityBodyLeftNavBar li.notSelectStyle:hover {
+    background-color: rgba(227, 226, 226, 0.333);
+    border-bottom: 3px solid rgba(227, 226, 226, 0.194);
+}
+
+.communityBodyLeftNavBar li.notSelectStyle {
+    border-bottom: 3px solid rgba(227, 226, 226, 0.194);
+}
+
+.communityBodyLeftMain {
+    margin: 12px 0;
 }
 
 .communityBodyRight {

@@ -8,6 +8,19 @@ const CommunityPage = () => {
 
     const [viewState, setViewState] = useState('posts');
 
+    const checkViewState = (view) => {
+        switch(view) {
+            case 'about':
+                return 'About Goes Here';
+            case 'posts':
+                return <Feed />;
+            case 'questions':
+                return 'Questions goes here';
+            default:
+                return 'Loading';
+        }
+    }
+
 
     return (
         <div className='communityPage'>
@@ -40,13 +53,18 @@ const CommunityPage = () => {
             {/* Community Body */}
             <main className='communityBody'>
                 <div className='communityBodyLeft'>
-                    <div className='postAQuestionBodyTop'>
-                        <ul className='postAQuestionNavBar'>
-                            <li id='AskAQuestionViewButton' className={`${(viewState === 'about') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('about')}>About</li>
-                            <li id='makeAPostViewButton' className={`${(viewState === 'posts') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('posts')}>Posts</li>
+                    <div className='communityBodyLeftTop'>
+                        <ul className='communityBodyLeftNavBar'>
+                            <li id='aboutViewButton' className={`${(viewState === 'about') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('about')}>About</li>
+                            <li id='postsViewButton' className={`${(viewState === 'posts') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('posts')}>Posts</li>
+                            <li id='questionsViewButton' className={`${(viewState === 'questions') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('questions')}>Questions</li>
                         </ul>
                     </div>
-                    <Feed /> 
+                    <main className='communityBodyLeftMain'>
+                        {
+                            checkViewState(viewState)
+                        }
+                    </main>
                 </div>
                 <div className='communityBodyRight'>
                     <RightBar communityPage/>
