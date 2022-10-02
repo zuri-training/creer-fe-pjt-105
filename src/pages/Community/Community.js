@@ -25,7 +25,7 @@ const CommunityPage = () => {
     return (
         <div className='communityPage'>
             {/* Header */}
-            <Header />
+            {/* <Header /> */}
 
             {/* Cpmmunity Header */}
             <div className='communityHeader'>

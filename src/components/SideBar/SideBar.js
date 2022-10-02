@@ -1,4 +1,5 @@
 import './SideBar.css';
+import { Link } from 'react-router-dom';
 import { AiOutlineHome  } from 'react-icons/ai';
 import { FaRegBookmark  } from 'react-icons/fa';
 import { FiHash  } from 'react-icons/fi';
@@ -44,10 +45,13 @@ const SideBar = () => {
                             <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage3.png'} className='sideBarTopicsImage'/>
                             <p>Learning JavaScript</p>
                         </li> 
-                        <li>
-                            <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage4.png'} className='sideBarTopicsImage'/>
-                            <p>Starting Out In Tech</p>
-                        </li> 
+                        <Link to='/community'>
+                            <li>
+                                <img alt="community" src={process.env.PUBLIC_URL + '/assets/communityImage4.png'} className='sideBarTopicsImage'/>
+                                <p>Beginner Coder</p>
+                            </li> 
+                        </Link>
+
                     </ul>
                 <li id='yourCommunities' className='yourCommunities' onClick={yourCommunityListToggle}><BsPeople className='sidebarIcons'/><p>My Communities</p><MdKeyboardArrowDown className='dropdownIcon'/></li>
                     <ul className='yourCommunityList noDisplay' id='yourCommunityList'>
