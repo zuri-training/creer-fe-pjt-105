@@ -3,7 +3,7 @@ import './Community.css';
 import Header from '../../components/Header/Header';
 import Feed from '../../components/Feed/Feed';
 import RightBar from '../../components/RightBar/RightBar';
-import Cardwrapper from '../../components/CardWrapper/Cardwrapper';
+import Cardwrapper from '../../components/Cardwrapper/Cardwrapper';
 
 const CommunityPage = () => {
 
