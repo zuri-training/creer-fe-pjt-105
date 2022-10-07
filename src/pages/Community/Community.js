@@ -3,7 +3,10 @@ import './Community.css';
 import Header from '../../components/Header/Header';
 import Feed from '../../components/Feed/Feed';
 import RightBar from '../../components/RightBar/RightBar';
-import Cardwrapper from '../../components/Cardwrapper/Cardwrapper';
+import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
+import CommunitiesToFollow from '../../components/CommunitiesToFollow/CommunitiesToFollow';
+import AboutCommunity from '../../components/AboutCommunity/AboutCommunity';
+import Contributors from '../../components/Contributors/Contributors';
 
 const CommunityPage = () => {
 
@@ -12,7 +15,12 @@ const CommunityPage = () => {
     const checkViewState = (view) => {
         switch(view) {
             case 'about':
-                return 'About Goes Here';
+                return (
+                    <>
+                        <AboutCommunity />
+                        <Contributors />
+                    </>
+                );
             case 'posts':
                 return <Feed />;
             case 'questions':
@@ -68,10 +76,17 @@ const CommunityPage = () => {
                     </main>
                 </div>
                 <div className='communityBodyRight'>
-                    <Cardwrapper>
-                        Wrapper content go here!
-                    </Cardwrapper>
-                    <RightBar communityPage/>
+                    {
+                        (viewState === 'about') ?
+                        '' :
+                        (
+                           <>
+                            <AboutCommunity />
+                            <Contributors />
+                            <CommunitiesToFollow />
+                           </> 
+                        )
+                    }
                 </div>
             </main>
             

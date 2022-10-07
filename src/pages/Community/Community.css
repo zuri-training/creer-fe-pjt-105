@@ -141,8 +141,6 @@
 }
 
 .communityBodyLeftNavBar {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -153,8 +151,8 @@
 
 .communityBodyLeftNavBar li {
     margin: 0;
-    width: 10%;
-    padding: 11px 5px;
+    height: 100%;
+    padding: 12px 10px;
     display: flex;
     justify-content: center;
     align-items: center;

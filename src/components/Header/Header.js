@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Header = ({ isAuth }) => {
         return (
-            <div className={`header ${isAuth ? 'borderBottom' : ''}`}>
+            <div className={`header ${isAuth ? 'borderBottom' : 'header-padding'}`}>
                 <div className={`headerContentWrapper ${isAuth ? 'inappWidth' : 'externalPageWidth'}`}>
                     <div className='headerLeft'>
                         <Link to='/'>
