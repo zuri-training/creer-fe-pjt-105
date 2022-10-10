@@ -18,7 +18,9 @@ const CommunityPage = () => {
                 return (
                     <>
                         <AboutCommunity />
-                        <Contributors />
+                        <Contributors isAboutMain contributorType={'admin'}/>
+                        <Contributors isAboutMain contributorType={'moderators'}/>
+                        <Contributors isAboutMain />
                     </>
                 );
             case 'posts':
@@ -81,8 +83,8 @@ const CommunityPage = () => {
                         '' :
                         (
                            <>
-                            <AboutCommunity />
                             <Contributors />
+                            <AboutCommunity />
                             <CommunitiesToFollow />
                            </> 
                         )

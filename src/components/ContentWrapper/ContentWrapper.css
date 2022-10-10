@@ -46,13 +46,13 @@
     font-size: 0.7rem;
     line-height: 20px;
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.734);
+    color: rgba(0, 0, 0, 0.79);
     transition: ease-in-out 0.3s all;
 }
 
 .contentWrapper-list > li:hover {
     color: #000;
-    background-color: rgba(227, 226, 226, 0.734);
+    background-color: rgba(227, 226, 226, 0.103);
 }
 
 .contentWrapper-main {
