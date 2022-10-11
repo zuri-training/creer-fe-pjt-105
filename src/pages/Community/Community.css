@@ -132,7 +132,7 @@
 
 .communityBodyLeft {
     /* margin-right: 20px; */
-    flex: 6;
+    flex: 5.5;
     padding: 0 30px 0 0;
 }
 
@@ -181,5 +181,5 @@
 }
 
 .communityBodyRight {
-    flex: 3;
+    flex: 3.2;
 }
