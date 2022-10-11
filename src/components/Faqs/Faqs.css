@@ -1,6 +1,6 @@
 .faqsQuestionAndAnswer {
     box-sizing: border-box;
-    margin-top: 12px;
+    margin-top: 15px;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -13,7 +13,7 @@
 
 .faqsQuestion {
     /* width: 100%; */
-    padding: 0 15px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@
 
 .faqsQuestion p {
     font-size: .9rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .faqsAnswer {
@@ -50,7 +50,7 @@
     border: none;
     border-radius: 100%;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .closed {
