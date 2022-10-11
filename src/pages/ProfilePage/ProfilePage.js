@@ -1,5 +1,10 @@
 import './ProfilePage.css';
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes, FaGraduationCap } from 'react-icons/fa';
+import { TbCake } from "react-icons/tb";
+import { IoLocationOutline, IoAdd } from "react-icons/io5";
+import { MdWorkOutline } from "react-icons/md";
+import { BiPencil } from "react-icons/bi";
+// import { SlGraduation } from "react-icons/sl";
 import Posts from '../../components/Posts/Posts';
 
 const ProfilePage = () => {
@@ -12,7 +17,7 @@ const ProfilePage = () => {
                     <div className='profilePageBodyLeft'>
                         <div className='profilePageBodyTop'>
                             <div className='profileImageAndName'>
-                                <img className='profilePageImage' src={process.env.PUBLIC_URL + '/assets/communityBackgroundImage1.jpg'} alt=''/>
+                                <img className='profilePageImage' src={process.env.PUBLIC_URL + '/assets/profileImage.png'} alt=''/>
                                 <div className='profileNameAndShortDescription'>
                                     <p className='profilePageName'>Tolulope Daniels</p>
                                     <p className='profilePageShortDescription'>Frontend Developer at Zuri Team</p>
@@ -49,23 +54,23 @@ const ProfilePage = () => {
                         <div className='profilePageCredentials'>
                             <div className='profilePageCredentialsHeader'>
                                 <p className='profilePageCredentialsHeaderText'>Personal Details</p>
-                                <FaTimes className='editIcon'/>
+                                <BiPencil className='editIcon'/>
                             </div>
                             <div className='profilePageCredentialsBody'>
                                 <div className='profilePageCredential'>
-                                    <FaTimes className='editIcon'/> 
+                                    <MdWorkOutline className='editIcon'/> 
                                     <p className='profilePageCredentialText'>Add Work Details</p>
                                 </div>
                                 <div className='profilePageCredential'>
-                                    <FaTimes className='editIcon'/> 
+                                    <FaGraduationCap className='editIcon'/> 
                                     <p className='profilePageCredentialText'>Add Education Details</p>
                                 </div>
                                 <div className='profilePageCredential'>
-                                    <FaTimes className='editIcon'/> 
+                                    <IoLocationOutline className='editIcon'/> 
                                     <p className='profilePageCredentialText'>Add Location Details</p>
                                 </div>
                                 <div className='profilePageCredential'>
-                                    <FaTimes className='editIcon'/> 
+                                    <TbCake className='editIcon'/> 
                                     <p className='profilePageCredentialText joinDate'>Joined June 2020</p>
                                 </div>
                             </div>
@@ -76,7 +81,7 @@ const ProfilePage = () => {
                             </div>
                             <div className='profilePageCreateACommunityBody'>
                                 <div className='createACommunityButton'>
-                                    <FaTimes className='createACommunityIcon' />
+                                    <IoAdd className='createACommunityIcon' />
                                     <p className='createACommunityText'>Create A Community</p>
                                 </div>
                             </div>
