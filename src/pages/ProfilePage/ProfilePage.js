@@ -7,6 +7,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { BiPencil } from "react-icons/bi";
 // import { SlGraduation } from "react-icons/sl";
 import Posts from '../../components/Posts/Posts';
+import ProfileItemsList from '../../components/ProfileItemsList/ProfileItemsList';
 
 const ProfilePage = () => {
 
@@ -21,7 +22,7 @@ const ProfilePage = () => {
             case 'answers':
                 return 'Answers Here!';
             case 'spaces':
-                return 'Spaces Here!';
+                return <ProfileItemsList contentType='spaces' content={'hallo'}/>;
             case 'followers':
                     return 'Followers Here!';
             case 'following':
