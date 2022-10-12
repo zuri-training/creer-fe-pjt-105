@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './ProfilePage.css';
 import { FaTimes, FaGraduationCap } from 'react-icons/fa';
 import { TbCake } from "react-icons/tb";
@@ -8,6 +9,28 @@ import { BiPencil } from "react-icons/bi";
 import Posts from '../../components/Posts/Posts';
 
 const ProfilePage = () => {
+
+    const [viewState, setViewState] = useState('posts');
+
+    const checkViewState = (view) => {
+        switch(view) {
+            case 'posts':
+                return <Posts />;
+            case 'questions':
+                return 'Questions goes here';
+            case 'answers':
+                return 'Answers Here!';
+            case 'spaces':
+                return 'Spaces Here!';
+            case 'followers':
+                    return 'Followers Here!';
+            case 'following':
+                    return 'Following Here!';
+            default:
+                return 'Ooops something broke!';
+        }
+    }
+
     return (
         <div className='profilePage'>
             {/* <div className='profilePageContainer'> */}
@@ -28,26 +51,21 @@ const ProfilePage = () => {
                             </div> */}
                         </div>
                         <div className='profilePageBodyCenter'>
-                            <div className='profilePageStatsHolder'>
-                                <div className='profilePagePostsHolder'>
-                                    <p className='profilePageStatsText'>20 Posts</p>
-                                </div>
-                                <div className='postsBody noDisplay'>
-                                    <Posts />
-                                </div>
-                                <div className='profilePageFollowersHolder'>
-                                    <p className='profilePageStatsText'>2000 Followers</p>
-                                </div>
-                                <div className='followersBody noDisplay'>
-                                    <Posts />
-                                </div>
-                                <div className='profilePageFollowingHolder'>
-                                    <p className='profilePageStatsText'>300 Following</p>
-                                </div>
-                                <div className='followingBody noDisplay'>
-                                    <Posts />
-                                </div>
-                            </div>
+                        <div className='communityBodyLeftTop'>
+                            <ul className='communityBodyLeftNavBar'>
+                                <li id='aboutViewButton' className={`${(viewState === 'posts') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('posts')}>11 Posts</li>
+                                <li id='questionsViewButton' className={`${(viewState === 'questions') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('questions')}>5 Questions</li>
+                                <li id='postsViewButton' className={`${(viewState === 'answers') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('answers')}>23 Answers</li>
+                                <li id='aboutViewButton' className={`${(viewState === 'spaces') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('spaces')}>10 Spaces</li>
+                                <li id='postsViewButton' className={`${(viewState === 'followers') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('followers')}>566 Followers</li>
+                                <li id='questionsViewButton' className={`${(viewState === 'following') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('following')}>34 Following</li>
+                            </ul>
+                        </div>
+                        <main className='communityBodyLeftMain'>
+                            {
+                                checkViewState(viewState)
+                            }
+                        </main>
                         </div>
                     </div>
                     <div className='profilePageBodyRight'>
