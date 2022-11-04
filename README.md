@@ -88,8 +88,8 @@ This project is only possible thanks to the wonderful people that carried it fro
 Below is a list of the wonderful people;
 
 - [Imiebo Godson](https://github.com/ImieboGodson) - Frontend Developer
-<!-- - [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer -->
-<!-- - [Okoroafor Daniel](https://github.com/OkoroaforDaniel) -Frontend Developer -->
-<!-- - [Praise Odoh](https://github.com/odohpraise) - Frontend Developer -->
+- [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer
+- [Okoroafor Daniel](https://github.com/OkoroaforDaniel) -Frontend Developer
+- [Praise Odoh](https://github.com/odohpraise) - Frontend Developer 
 
 
