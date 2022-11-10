@@ -1,4 +1,5 @@
 .profile-items-list {
+    width: 100%;
     list-style: none;
     border-top: 0.5px solid #ccc;
 }

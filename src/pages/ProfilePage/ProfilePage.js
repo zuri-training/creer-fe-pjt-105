@@ -62,7 +62,7 @@ const ProfilePage = () => {
                                 <li id='questionsViewButton' className={`${(viewState === 'following') ? 'selectStyle' : 'notSelectStyle'}`} onClick={() => setViewState('following')}>34 Following</li>
                             </ul>
                         </div>
-                        <main className='communityBodyLeftMain'>
+                        <main className='communityBodyLeftMain profilePageBodyCenterMain'>
                             {
                                 checkViewState(viewState)
                             }
