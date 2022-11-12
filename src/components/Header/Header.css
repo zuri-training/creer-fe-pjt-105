@@ -9,6 +9,10 @@
     z-index: 1000;
 }
 
+.header-padding {
+    padding: 10px 0;
+}
+
 .borderBottom {
     border-bottom: 1px solid #dee0e1;
     box-shadow: 0 3px 6px rgba(0,0,0,0.04);
@@ -23,7 +27,7 @@
 }
 
 .externalPageWidth {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .inappWidth {
@@ -34,12 +38,27 @@
     padding-left: 20px;
 } */
 
+.headerLeft {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo img {
     cursor: pointer;
 }
 
+.navLinksToggleBtn {
+    display: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.5rem;
+}
+
 .nav-items {
-    width: 55%;
+    width: 57%;
     display: flex;
     justify-content: flex-end;
 }
@@ -50,6 +69,8 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .headerContentWrapper ul li {
@@ -62,35 +83,38 @@
     color: #3757FF;
 }
 
-.headerContentWrapper .headerBtn {
-    padding: 10px 35px;
-    border-radius: 5px;
+.headerBtn {
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     border: none;
-    outline: none;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    font-weight: 500;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
-.headerContentWrapper .loginBtn {
-    color: #000;
-    background-color: #EFEEEE;
+#loginBtn {
+    padding: 9px 22px;
+    color: #516df8;
+    border: 0.5px solid #516df8;
 }
 
-.headerContentWrapper .loginBtn:hover {
-    color: #000;
+#loginBtn:hover {
+    color: #3757FF;
+    border: 0.5px solid #3757FF;
 }
 
-.signUpBtn {
+#signUpBtn {
+    padding: 10px 35px;
+    color: #fff;
+    background-color: #516df8;
+}
+
+#signUpBtn:hover {
     color: #fff;
     background-color: #3757FF;
-}
-
-.headerContentWrapper .signUpBtn:hover {
-    color: #fff;
-}
-
-.headerBtn:hover {
-    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.166);
 }
 
 .headerLeft {
@@ -182,4 +206,84 @@
 .profileImage img {
     width: 100%;
     object-fit: cover;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+    .headerContentWrapper {
+        margin: 0 auto;
+        padding: 8px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .headerLeft {
+        width: 100%;
+    }
+
+    .navLinksToggleBtn {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .navItems {
+        display: none;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .navItems.display {
+        display: flex;
+    }
+
+    .headerContentWrapper ul {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .headerContentWrapper ul li {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerBtn {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #signUpBtn {
+        width: 100%;
+        padding: 10px 35px;
+        color: #fff;
+        background-color: #516df8;
+    }
+}
+
+@media (max-width: 640px) {
+    .headerContentWrapper ul {
+        font-size: 0.6rem;
+    }
+
+    .headerBtn {
+        font-size: 0.6rem;
+    }
 }
