@@ -1,9 +1,13 @@
 import './Header.css';
 import { BsSearch } from 'react-icons/bs';
 import { VscBell } from 'react-icons/vsc';
+import { MdClose, MdMenu } from "react-icons/md";
+// import { HiOutlineBars3 } from "react-icons/hi";
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Header = ({ isAuth }) => {
+    const [navOpen, setNavOpen] = useState(false);
         return (
             <div className={`header ${isAuth ? 'borderBottom' : 'header-padding'}`}>
                 <div className={`headerContentWrapper ${isAuth ? 'inappWidth' : 'externalPageWidth'}`}>
@@ -13,6 +17,14 @@ const Header = ({ isAuth }) => {
                                 <img src={process.env.PUBLIC_URL + '/assets/Logo.png'} alt='Logo'/>
                             </div>
                         </Link>
+                        <button className='navLinksToggleBtn' onClick={() => setNavOpen(!navOpen)}>
+                            {
+                                navOpen ?
+                                <MdClose className='navLinksToggleBtnIcon'/>
+                                :
+                                <MdMenu className='navLinksToggleBtnIcon'/>
+                            }
+                        </button>
                     </div>
                     {
                         (isAuth) 
@@ -40,7 +52,7 @@ const Header = ({ isAuth }) => {
                         )
                         :
                         (
-                            <div className='nav-items'>
+                            <div className={`navItems ${navOpen ? 'display' : ''}`}>
                                 <ul>
                                     <li>Contact us</li>
                                     <li>Learn more</li>
