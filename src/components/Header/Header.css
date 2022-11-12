@@ -279,5 +279,11 @@
 }
 
 @media (max-width: 640px) {
-    
+    .headerContentWrapper ul {
+        font-size: 0.6rem;
+    }
+
+    .headerBtn {
+        font-size: 0.6rem;
+    }
 }

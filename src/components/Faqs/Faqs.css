@@ -81,5 +81,20 @@
 }
 
 @media (max-width: 640px) {
+    .faqsQuestion p {
+        font-size: .6rem;
+        line-height: 16px;
+    }
     
+    .faqsAnswer p {
+        font-size: 0.6rem;
+        line-height: 16px;
+    }
+
+    .FaqBtn {
+        margin-left: 10px;
+        height: fit-content;
+        width: fit-content;
+        font-size: 0.7rem;
+    }
 }

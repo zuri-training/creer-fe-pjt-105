@@ -79,7 +79,6 @@ p {
 
 /* How-It-Works section */
 .howItWorks {
-    /* margin-top: 200px; */
     width: 100%;
     height: fit-content;
 }
@@ -428,6 +427,23 @@ textarea:focus {
         font-size: 1.5rem;
     }
 
+    /* About Us */
+    .aboutUsContent {
+        margin: 30px 0 70px 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .aboutUsContentTitle h1 {
+        margin: 10px 0;
+    }
+
+    .aboutUsContentParagraph p{
+        margin: 0 auto;
+        width: 85%;
+        text-align: center;
+    }
+
     /* Contact Us */
     .contactUsForm {
         margin-top: 10px;
@@ -454,13 +470,238 @@ textarea:focus {
     .submitBtn {
         margin: 10px 32px 0 auto;
     }
+
+    .submitBtn input[type=submit] {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 768px) {
-    
+    /* Hero Section */
+
+    .heroText {
+        width: 47%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    #heroBtn {
+        font-size: 0.7rem;
+    }
+
+    .heroImage {
+        width: 47%;
+    }
+
+    /* How-It-Works section */
+    .howItWorks {
+        margin-top: 150px;
+    }
+
+    .descriptionByWords .subSection {
+        width: 30%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        line-height: 40px;
+    }
+
+    /* Ignite Your Curiosity */
+    .igniteYourCuriosity {
+        margin-top: 150px;
+    }
+
+    .sectionText {
+        width: 45%;
+    }
+
+    .sectionText h2 {
+        font-size: 1.4rem;
+    }
+
+    /* FAQs */
+
+    .faqsContents {
+        width: 75%;
+    }
+
+    /* Contact Us */
+    .contactUsForm {
+        width: 70%;
+        font-size: 0.7rem;
+    }
+
+    .contactUsForm input[type=text],
+    .contactUsForm input[type=email] {
+        font-size: 0.7rem;
+    }
+
+
+    .contactUsForm textarea {
+        width: 375px !important;
+        font-size: 0.7rem;
+    }
+
+    .submitBtn {
+        margin: 10px 32px 0 auto;
+    }
+
+    .submitBtn input[type=submit] {
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 640px) {
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .heroText {
+        margin-top: 40px;
+        order: 2;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    #heroBtn {
+        font-size: 0.7rem;
+    }
+
+    .heroImage {
+        width: 100%;
+    }
+
+    /* How-It-Works section */
+    .howItWorks {
+        margin-top: 100px;
+    }
+
+    .howItWorks .sectionTitle {
+        margin: 15px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descriptionByWords {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .descriptionByWords .subSection {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .smallBox {
+        margin-left: 20px;
+        padding-left: 6px;
+    }
+    
+    .howItWorks h2 {
+        margin: 0;
+    }
+
+    /* Ignite Your Curiosity */
+    .igniteYourCuriosity {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+
+    .sectionText {
+        margin-top: 50px;
+        order: 2;
+        width: 100%;
+    }
+
+    .sectionTitle {
+        margin-bottom: 10px;
+    }
+
+    .sectionText h2 {
+        font-size: 1.4rem;
+    }
+
+    .sectionImage {
+        width: 100%;
+    }
+
+    /* About Us */
+    .aboutUs {
+        margin-top: 100px;
+    }
+
+    /* FAQs */
+    .faqsContents {
+        width: 100%;
+    }
+
+    /* Contact Us */
+    .contactUsForm {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+
+    .contactUsForm input[type=text],
+    .contactUsForm input[type=email] {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+
+    .contactUsForm textarea {
+        width: 254px !important;
+        font-size: 0.6rem;
+    }
+
+    .contactUsForm input::placeholder,
+    .contactUsForm textarea::placeholder {
+        font-size: 0.6rem;
+    }
+
+    .contactUsForm input::-webkit-input-placeholder,
+    .contactUsForm textarea::-webkit-input-placeholder {
+        font-size: 0.6rem;
+    }
+
+    .contactUsForm input:-ms-input-placeholder,
+    .contactUsForm textarea:-ms-input-placeholder {
+        font-size: 0.6rem;
+    }
+
+    .submitBtn {
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .submitBtn input[type=submit] {
+        width: 100%;
+        padding: 15px 45px;
+        font-size: 0.6rem;
+    }
+
     
 }
 
