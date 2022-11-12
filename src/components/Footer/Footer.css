@@ -59,3 +59,20 @@
 .footer a:hover {
     color: #000;
 }
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 640px) {
+    
+}

@@ -13,7 +13,7 @@ const LandingPage = () => {
             {/* Hero */}
             <section className='hero'>
               <div className='heroText'>
-                <h1>Share problems, Discover solutions, Explore the community.</h1>
+                <h1>Share problems,<br></br> Discover solutions,<br></br> Explore the community.</h1>
                 <p>Share your project ideas with developers and non-developers all around the world.</p>
                 <Link to='/signup' id='heroBtn' className='heroBtn'>Get Started</Link>
               </div>

@@ -14,9 +14,10 @@
 /* Hero Section */
 .hero {
     width: 100%;
-    padding-top: 50px;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .heroText {
@@ -78,8 +79,9 @@ p {
 
 /* How-It-Works section */
 .howItWorks {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     width: 100%;
+    height: fit-content;
 }
 
 .howItWorks .sectionTitle {
@@ -349,3 +351,116 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+
+    /* Hero Section */
+    .hero {
+        width: 100%;
+        height: fit-content;
+        padding-top: 50px;
+    }
+
+    .heroText {
+        width: 46%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+
+    .heroText p {
+        margin: 10px 0 10px 0;
+    }
+
+    #heroBtn {
+        margin: 20px 0;
+        padding: 15px 55px;
+        font-size: 0.9rem;
+    }
+
+    .heroImage {
+        width: 46%;
+    }
+
+    .heroImage img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* How-It-Works section */
+    .howItWorks {
+        margin-top: 200px;
+    }
+
+    .descriptionByWords .subSection {
+        width: 30%;
+    }
+
+    .howItWorks h2 {
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    /* Ignite Your Curiosity */
+    .igniteYourCuriosity {
+        margin-top: 200px;
+    }
+
+    .sectionText {
+        width: 45%;
+    }
+
+    .sectionText h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Contact Us */
+    .contactUsForm {
+        margin-top: 10px;
+        width: 60%;
+        height: fit-content;
+        font-size: 0.8rem;
+    }
+
+    .contactUsForm input[type=text],
+    .contactUsForm input[type=email] {
+        margin: 10px 0;
+        width: 85%;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+
+    .contactUsForm textarea {
+        width: 345px !important;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .submitBtn {
+        margin: 10px 32px 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 640px) {
+    
+}
+

@@ -22,9 +22,9 @@ const FaqItem = ({ faqData }) => {
 
     return (
         <div className='faqsQuestionAndAnswer'>
-            <div className='faqsQuestion'>
+            <div className='faqsQuestion' onClick={() => onBtnClick()}>
                 <p>{faqData.question}</p>
-                <button className='FaqBtn' onClick={() => onBtnClick()}>{!isOpen ? <GrAdd /> : <FiMinus />}</button>
+                <button className='FaqBtn'>{!isOpen ? <GrAdd /> : <FiMinus />}</button>
             </div>
             <div className={`faqsAnswer ${isOpen ? 'open' : 'closed'}`}>
                 <p>{faqData.answer}</p>
