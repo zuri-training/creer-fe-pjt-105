@@ -1,14 +1,7 @@
 .post {
-    margin-bottom: 15px;
-    /* padding-top: 15px;
-    background-color: #fff; */
-    /* border-radius: 3px; */
-    /* border: 1px solid #ccc; */
+    margin-bottom: 7px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
 }
-
-/* .post:hover {
-    background-color: rgb(252, 253, 253);
-} */
 
 .postMain {
     padding-top: 15px;

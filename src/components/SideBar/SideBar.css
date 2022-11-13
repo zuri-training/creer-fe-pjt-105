@@ -58,9 +58,7 @@
 }
 
 .sideBar ul li:hover {
-    /* color: #3757FF; */
-    /* background-color: rgba(55, 88, 255, 0.096); */
-    background-color: rgba(205, 205, 205, 0.726);
+    background-color: rgba(227, 226, 226, 1);
 }
 
 .sideBar ul li p {

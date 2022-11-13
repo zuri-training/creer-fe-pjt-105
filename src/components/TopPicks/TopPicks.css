@@ -1,11 +1,10 @@
 .topPicks {
-    /* margin-top: 30px; */
     width: 100%;
-    /* padding-top:  10px; */
     background-color: #fff;
     box-sizing: border-box;
     border-radius: 3px;
     border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
 }
 
 .topPicksTitleText {

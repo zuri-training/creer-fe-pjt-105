@@ -2,18 +2,15 @@
     margin-bottom: 10px;
     padding: 5px 10px;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.734);
     background-color: rgba(227, 226, 226, 0.734);
-    /* border: 1px solid #ccc; */
     cursor: pointer;
 }
 
 .createASpace:hover {
-    /* background-color: rgba(55, 88, 255, 0.096); */
-    background-color: rgba(205, 205, 205, 0.726);
+    background-color: rgba(227, 226, 226, 1);
 }
 
 .createASpaceIcon {
