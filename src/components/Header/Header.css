@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     width: 100vw;
-    min-height: fit-content;
+    min-height: 56px;
     background: rgb(255, 255, 255);
     z-index: 1000;
 }
@@ -275,6 +275,14 @@
         padding: 10px 35px;
         color: #fff;
         background-color: #516df8;
+    }
+
+    .headerRight {
+        display: none;
+    }
+    
+    .headerCenter {
+        display: none;
     }
 }
 
