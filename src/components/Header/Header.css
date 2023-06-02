@@ -5,6 +5,9 @@
     right: 0;
     width: 100vw;
     min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     background: rgb(255, 255, 255);
     z-index: 1000;
 }
@@ -20,43 +23,12 @@
 
 .headerContentWrapper {
     margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
     padding: 8px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.externalPageWidth {
-    max-width: 1000px;
-}
-
-.inappWidth {
-    max-width: 1000px;
-}
-
-.headerLeft {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    cursor: pointer;
-}
-
-.navLinksToggleBtn {
-    display: none;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 1.5rem;
-}
-
-.nav-items {
-    width: 57%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .headerContentWrapper ul {
@@ -79,153 +51,6 @@
     color: #3757FF;
 }
 
-.headerBtn {
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 3px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: ease-in-out 0.3s all;
-}
-
-#loginBtn {
-    padding: 9px 22px;
-    color: #516df8;
-    border: 0.5px solid #516df8;
-}
-
-#loginBtn:hover {
-    color: #3757FF;
-    border: 0.5px solid #3757FF;
-}
-
-#signUpBtn {
-    padding: 10px 35px;
-    color: #fff;
-    background-color: #516df8;
-}
-
-#signUpBtn:hover {
-    color: #fff;
-    background-color: #3757FF;
-}
-
-.headerLeft {
-    flex: 1.5;
-}
-
-.headerCenter {
-    flex: 6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.headerCenter .searchBox {
-    width: 58%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    background: rgba(253, 253, 253, 0.8);
-    border: 1px solid #d1d1d1;
-    box-sizing: border-box;
-    border-radius: 3px;
-}
-
-.headerCenter .searchBox:hover {
-    border: 1px solid #bebebe;
-}
-
-.headerCenter .searchBox:focus-within {
-    background: #fff;
-    border: 1px solid #bebebe;
-}
-
-.searchIcon {
-    font-size: 0.75rem;
-    color: #bebebe;
-    margin-right: 8px;
-}
-
-
-input::placeholder {
-    font-size: 0.75rem;
-    font-weight: 300;
-    color: #bebebe;
-}
-
-input::-webkit-input-placeholder {
-    font-size: 0.75rem;
-    font-weight: 300;
-    color: #bebebe;
-}
-
-input:-ms-input-placeholder {
-    font-size: 0.75rem;
-    font-weight: 300;
-    color: #bebebe;
-}
-
-.headerCenter .searchBox input[type='text'] {
-    width: 90%;
-    height: 90%;
-    background: transparent;
-    border: none;
-}
-
-.headerRight {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.notification {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-
-}
-
-.notification span {
-    position: absolute;
-    background-color: red;
-    color: #fff;
-    font-size: 12px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -2px;
-    right: 0;
-}
-
-
-
-.headerRight .profileImage {
-    margin-left: 35px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profileImage img {
-    width: 100%;
-    object-fit: cover;
-}
-
 
 
 /* MEDIA QUERIES */
@@ -237,32 +62,11 @@ input:-ms-input-placeholder {
 
     .headerContentWrapper {
         margin: 0 auto;
-        padding: 8px 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .headerLeft {
-        width: 100%;
-    }
-
-    .navLinksToggleBtn {
-        display: flex;
-        font-size: 1.5rem;
-    }
-
-    .navItems {
-        display: none;
-        margin-top: 30px;
-        margin-bottom: 5px;
-        width: 100%;
-        justify-content: flex-end;
-    }
-
-    .navItems.display {
-        display: flex;
+        align-items: center;
     }
 
     .headerContentWrapper ul {
@@ -282,34 +86,10 @@ input:-ms-input-placeholder {
         justify-content: center;
         align-items: center;
     }
-
-    .headerBtn {
-        width: 100%;
-        font-size: 0.8rem;
-    }
-
-    #signUpBtn {
-        width: 100%;
-        padding: 10px 35px;
-        color: #fff;
-        background-color: #516df8;
-    }
-
-    .headerRight {
-        display: none;
-    }
-    
-    .headerCenter {
-        display: none;
-    }
 }
 
 @media (max-width: 640px) {
     .headerContentWrapper ul {
-        font-size: 0.6rem;
-    }
-
-    .headerBtn {
         font-size: 0.6rem;
     }
 }
