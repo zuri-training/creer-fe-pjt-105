@@ -1,22 +1,36 @@
+/* .inAppHeaderWrapper {
+    padding: 10px;
+} */
 
-.inAppHeaderWrapper, .mobileSearchView {
+.inAppHeaderWrapper, .mobileSearchView, .topHeaderWrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* .mobileSearchView, .topHeaderWrapper {
+    background: #B70404;
+} */
+
+.mobileSearchView {
+    padding-right: 10px;
+}
 
 .searchButton, .backButton {
     height: 100%;
     border: none;
     outline: none;
+    color: #757575;
     background: transparent;
+}
+
+.searchButton {
+    margin-right: 10px;
 }
 
 .backButton {
     padding: 0;
-    width: 3%;
 }
 
 .backButtonIcon {
@@ -24,7 +38,7 @@
 }
 
 .searchInputWrapper {
-    width: 90%;
+    width: 92%;
 }
 
 
@@ -119,7 +133,11 @@
 @media (max-width: 768px) {
 
     .normalInAppWrapper {
-        padding: 0px 10px;
+        flex-direction: column;
+    }
+
+    .topHeaderWrapper {
+        padding: 10px 20px;
     }
 
     .searchButton {

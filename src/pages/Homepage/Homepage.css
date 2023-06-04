@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 768px) {
+    .homepage main {
+        height: calc(100vh - 80px);
+    }
+
     .leftViewContainer {
         display: none;
     }

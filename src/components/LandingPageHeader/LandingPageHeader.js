@@ -7,7 +7,7 @@ import Logo from "../Logo/Logo";
 const LandingPageHeader = () => {
   const [navOpen, setNavOpen] = useState(false);
   return (
-    <>
+    <div className="landingPageHeader">
       <div className="headerLeft">
         <Logo />
         <button
@@ -37,7 +37,7 @@ const LandingPageHeader = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

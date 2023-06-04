@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import { useState } from "react";
 import Search from "../Search/Search";
+import MobileTab from "../MobileTab/MobileTab";
 
 const InAppHeader = () => {
   const [showSearch, setShowSearch] = useState(false);
@@ -26,27 +27,33 @@ const InAppHeader = () => {
         </div>
       ) : (
         <div className="normalInAppWrapper">
-          <Logo />
-          <button className="searchButton" onClick={() => setShowSearch(true)}>
-            <BsSearch className="searchButtonIcon" size="1rem" />
-          </button>
-          <div className="headerCenter">
-            <Search />
-          </div>
-          <div className="headerRight">
-            <div className="notification">
-              <VscBell className="notificationIcon" size="1.7em" />
-              <span>1</span>
+          <div className="topHeaderWrapper">
+            <Logo />
+            <button
+              className="searchButton"
+              onClick={() => setShowSearch(true)}
+            >
+              <BsSearch className="searchButtonIcon" size="1rem" />
+            </button>
+            <div className="headerCenter">
+              <Search />
             </div>
-            <Link to="/profile">
-              <div className="profileImage">
-                <img
-                  src={process.env.PUBLIC_URL + "/assets/profileImage.png"}
-                  alt="user profile"
-                />
+            <div className="headerRight">
+              <div className="notification">
+                <VscBell className="notificationIcon" size="1.7em" />
+                <span>1</span>
               </div>
-            </Link>
+              <Link to="/profile">
+                <div className="profileImage">
+                  <img
+                    src={process.env.PUBLIC_URL + "/assets/profileImage.png"}
+                    alt="user profile"
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
+          <MobileTab />
         </div>
       )}
     </div>
